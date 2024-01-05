@@ -124,11 +124,29 @@ a:hover {
     .navbar-brand img {
         border: 8px solid var(--color-brand) !important;
     }
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* This ensures the particles stay in the background */
+    }
 
     /* CONTENT WRAPPER */
     #content-wrapper {
+        position:relative;
         padding-left: var(--sidbar-width) !important;
+        z-index: 1;
+        overflow-y: auto;
+        /*-webkit-background-size: cover;
+        background-size:cover;
+        background-position: center center;
+        height: 100vh;
+        width: 100%;*/
+
     }
+    
 }
 
 
@@ -214,20 +232,4 @@ a:hover {
     background-color: var(--color-base) !important;
     border-radius: 100px !important;
     font-size: 24px !important;
-}
-
-.header {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #ffffff; /* Set your desired background color */
-}
-
-#particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
 }
