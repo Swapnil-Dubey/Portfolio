@@ -7,545 +7,478 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P309NWWZK"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-4P309NWWZK');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4P309NWWZK');
     </script>
     <title>Swapnil Dubey - Portfolio</title>
-    
+
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-
-
 </head>
-
-<body data-bs-spy="scroll" data-bs-target=".navbar">
-    <div id="particles-js"></div>
-    
-    
+<body data-bs-spy="scroll" data-bs-target=".navbar" class="theme-dark">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container flex-lg-column">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Swapnil Dubey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="d-flex align-items-center ms-auto me-3">
+                <button class="btn btn-outline-light btn-sm theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="las la-moon"></i>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="./assets/resume.pdf" target="_blank">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#leadership">Leadership &amp; Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- //NAVBAR -->
 
-    
-    <!-- CONTENT WRAPPER -->
+    <main id="content-wrapper">
+        <!-- HOME -->
+        <section id="home" class="section-padding">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <p class="text-uppercase text-accent fw-semibold mb-2">Computer Science &amp; Statistics @ UBC</p>
+                        <h1 class="display-4 fw-bold mb-3">Hey, I’m Swapnil.</h1>
+                        <p class="lead mb-3">4th-year Computer Science &amp; Statistics student at UBC (Dean’s Honour List, GPA 3.7/4.0), currently a Cyber Risk Analyst Co-op at Teck Resources and incoming Enterprise Solutions Software Engineer Co-op at BCI. I enjoy building ML/GenAI experiments and internal tools that teams actually use — from risk dashboards to RAG apps and workflow automation.</p>
+                        <p class="mb-4 text-muted">Based in Vancouver, BC · Open to data/ML, software, and product-oriented internships.</p>
+                        <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+                            <a class="btn btn-accent" href="#projects">View Projects</a>
+                            <a class="btn btn-outline-accent" href="./Swapnil_Dubey_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center gap-3 social-links">
+                            <a href="mailto:sdubey14@student.ubc.ca" class="d-flex align-items-center gap-2"><i class="las la-envelope"></i><span>sdubey14@student.ubc.ca</span></a>
+                            <a href="tel:+12368638210" class="d-flex align-items-center gap-2"><i class="las la-phone"></i><span>+1 (236) 863-8210</span></a>
+                            <a href="https://www.linkedin.com/in/swapnildub/" target="_blank" rel="noopener" class="d-flex align-items-center gap-2"><i class="lab la-linkedin"></i><span>LinkedIn</span></a>
+                            <a href="https://github.com/swapnil-dubey" target="_blank" rel="noopener" class="d-flex align-items-center gap-2"><i class="lab la-github"></i><span>GitHub</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //HOME -->
 
-        <div id="content-wrapper">
-            
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section-padding bg-surface">
+            <div class="container">
+                <div class="section-header mb-5 text-center">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="text-muted">Recent roles across cyber risk, business intelligence, and internal tools.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="card-title mb-0">BCI — Enterprise Solutions Software Engineer Co-op (Incoming)</h5>
+                                    <span class="badge bg-accent text-dark">Jan 2026 – Apr 2026</span>
+                                </div>
+                                <p class="text-muted mb-2">Enterprise Solutions · Victoria, BC (Hybrid)</p>
+                                <ul class="mb-0">
+                                    <li>Incoming Enterprise Solutions Software Engineer Co-op. I’ll be working with the Enterprise Solutions team to support internal business applications — enhancing and maintaining internal tools, helping with new features, and working in a Jira/Confluence + Git-based environment.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="card-title mb-0">Teck Resources Ltd. — Cyber Risk Analyst Co-op/Intern</h5>
+                                    <span class="badge bg-accent text-dark">Sep 2025 – Present</span>
+                                </div>
+                                <p class="text-muted mb-2">Digital Risk &amp; Compliance · Vancouver, BC</p>
+                                <ul class="mb-0">
+                                    <li>Triage daily cyber risk requests in ServiceNow; validate completeness and AL1/AL2 criticality, and maintain an audit-ready SharePoint intake tracker.</li>
+                                    <li>Run AL1/AL2 risk assessments for third-party vendors, policy exceptions, and change requests; document findings and remediation recommendations.</li>
+                                    <li>Built a Power Apps + Power Automate workflow that mirrors key ServiceNow intake fields to SharePoint, eliminating 10+ manual entries per week and improving traceability.</li>
+                                    <li>Maintain the enterprise risk register, update assessments, track remediation owners/target dates, and support audit readiness.</li>
+                                    <li>Produce weekly dashboards and leadership readouts (SLA health, remediation progress, vendor counts) for the CISO and DR&amp;C leadership.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="card-title mb-0">Teck Resources Ltd. — Business Analyst Co-op/Intern</h5>
+                                    <span class="badge bg-accent text-dark">May 2025 – Aug 2025</span>
+                                </div>
+                                <p class="text-muted mb-2">Digital Risk Practice &amp; Resilience · Vancouver, BC</p>
+                                <ul class="mb-0">
+                                    <li>Built Power BI dashboards and curated exports for monthly and quarterly cybersecurity reports (training, phishing, compliance KPIs).</li>
+                                    <li>Created monthly financial performance summaries using Excel pivots + Power BI, and led month-over-month variance walkthroughs with stakeholders.</li>
+                                    <li>Joined datasets from LMS, phishing tools, rosters, and finance (Excel, Power Query, SQL) to produce accurate KPI roll-ups and engagement analyses.</li>
+                                    <li>Co-planned phishing simulations for 10K+ employees, and improved employee phishing report rate by roughly 20% using segmentation insights and A/B testing.</li>
+                                    <li>Supported vendor procurement for the next security awareness platform with a requirements matrix, demo coordination, stakeholder scoring, and budget-fit checks.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //EXPERIENCE -->
 
-            <!-- HOME -->
-            <section id="home" class="full-height px-lg-5">
-                <audio controls autoplay loop>
-                    <source src="./assets/audio/bgm.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10">
-                            <h1 class="display-4 fw-bold" data-aos="fade-up">Hey! I am Swapnil Dubey </h1>
-                            <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300"> A Junior pursuing Computer Science and Statistics at the University of British Columbia, Vancouver. Passionate about exploring the worlds of data science, analytics, machine learning and product management. I aim craft solutions that provide pre eminent value and have a tangible impact.</p>
-                            <div data-aos="fade-up" data-aos-delay="600">
-                                <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+        <!-- PROJECTS -->
+        <section id="projects" class="section-padding">
+            <div class="container">
+                <div class="section-header mb-5 text-center">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="text-muted">A selection of data/ML, GenAI, and full-stack projects. More on my GitHub.</p>
+                </div>
+
+                <h5 class="text-uppercase text-accent fw-semibold mb-3">Featured Projects</h5>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card project-card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="project-title mb-0">Prescripto — AI Healthcare Transcription</h5>
+                                    <span class="badge bg-accent text-dark">Mar 2025</span>
+                                </div>
+                                <p class="text-muted mb-2">Python, Gemini 2.0 Flash, Whisper API</p>
+                                <ul class="mb-0">
+                                    <li>Built an AI tool to auto-transcribe and summarize doctor–patient conversations across 50+ languages, reducing admin work and language barriers.</li>
+                                    <li>Engineered a real-time transcription-to-summary pipeline using Whisper and Gemini Flash with structured prompting, achieving around 143 ms per request and ~35% faster SOAP note generation compared to a baseline.</li>
+                                    <li>Implemented a dual validation layer (regex checks + semantic checks against ICD-11 codes via a secondary model) to reduce critical hallucinations by roughly 40%.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card project-card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="project-title mb-0">Advizr — Personalized Academic Advice RAG</h5>
+                                    <span class="badge bg-accent text-dark">Sep 2024</span>
+                                </div>
+                                <p class="text-muted mb-2">Python, Cohere API, RAG, REST APIs</p>
+                                <ul class="mb-0">
+                                    <li>Built a retrieval-augmented generation tool that gives personalized UBC course advice using UBCGrades, UBC Explorer, and RateMyProfessor APIs.</li>
+                                    <li>Designed a custom re-ranking algorithm over 65K+ data points that reduced response latency from ~10 seconds to ~2 seconds.</li>
+                                    <li>Improved advice relevance by ~40% using fine-tuned Cohere LLMs and structured JSON outputs; received positive feedback during judging.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card project-card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="project-title mb-0">Happy Meal — Nutrition Tracking and Advice</h5>
+                                    <span class="badge bg-accent text-dark">Sep 2024 – Nov 2024</span>
+                                </div>
+                                <p class="text-muted mb-2">HTML/CSS, PHP, Oracle SQL</p>
+                                <ul class="mb-0">
+                                    <li>Developed a full-stack platform for personalized diet planning that integrates user preferences, meal plans, and dietitian feedback.</li>
+                                    <li>Normalized the database schema (3NF/BCNF) and added indexing to improve performance by around 30%, keeping query latency ≤ 200 ms.</li>
+                                    <li>Enforced referential integrity and cascading SQL operations for subscription management, supporting over 200 synthetic users.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card project-card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="project-title mb-0">Understanding &amp; Predicting Heart Disease</h5>
+                                    <span class="badge bg-accent text-dark">Jul 2024 – Aug 2024</span>
+                                </div>
+                                <p class="text-muted mb-2">R, Logistic Regression, LASSO</p>
+                                <ul class="mb-0">
+                                    <li>Developed a clinical decision-support model to predict heart disease risk using 15+ patient biomarkers.</li>
+                                    <li>Achieved 79.8% cross-validated accuracy and identified 6 key predictors using LASSO regularization.</li>
+                                    <li>Reduced false negatives by about 18% vs a baseline model to better support early detection.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-            </section>
-            <!-- //HOME -->
-                        <!-- Skills -->
-                        <section id="skills" class="full-height px-lg-5">
-                            <div class="container">
-                
-                                <div class="row pb-4" data-aos="fade-up">
-                                    <div class="col-lg-8">
-                                        <h6 class="text-brand">Skills</h6>
-                                        <h1>What I have been learning recently</h1>
-                                    </div>
-                                </div>
-                
-                                <div class="row gy-4">
-                
-                                    <div class="col-md-4" data-aos="fade-up">
-                                        <div class="skills p-4 bg-base rounded-4 shadow-effect">
-                                            <div class="iconbox rounded-4">
-                                                <i class="las la-stream"></i>
-                                            </div>
-                                            <h5 class="mt-4 mb-2">Data Science/Analysis & ML</h5>
-                                            <p class = "white">Python (Tensorflow, Scikit-learn, Matplotlib), R, SQL (in progress) & Databases</p>
-                                            <a href="https://github.com/Swapnil-Dubey/Amazon-Review-Emotion-Analyzer" class="link-custom">Project 1 |</a>
-                                            <a href="https://github.com/Swapnil-Dubey/Review-Analysis" class="link-custom">Project 2</a>
-                                        </div>
-                                    </div>
-                
-                                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                                        <div class="skills p-4 bg-base rounded-4 shadow-effect">
-                                            <div class="iconbox rounded-4">
-                                                <i class="las la-project-diagram"></i>
-                                            </div>
-                                            <h5 class="mt-4 mb-2">Data Pipelining</h5>
-                                            <p class = "white">EDA : Data cleaning & wrangling, Visualization, KNN (evaluation & tuning), regression, clustering, statistical inference, validation techniques</p>
-                                            <a href="https://github.com/Swapnil-Dubey/Water-Potability-Classification-GDSC" class="link-custom">Project</a>
-                                        </div>
-                                    </div>
-                
-                                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                                        <div class="skills p-4 bg-base rounded-4 shadow-effect">
-                                            <div class="iconbox rounded-4">
-                                                <i class="las la-laptop-code"></i>
-                                            </div>
-                                            <h5 class="mt-4 mb-2">Development</h5>
-                                            <p class = "white">Java, Python, C/C++, HTML/CSS, Scheme</p>
-                                            <a href="https://github.com/Swapnil-Dubey/Portfolio" class="link-custom">Project 1 |</a>
-                                            <a href="https://github.com/Swapnil-Dubey/PetPal" class="link-custom">Project 2 |</a>
-                                            <a href="https://github.com/Swapnil-Dubey/Automizer" class="link-custom">Project 3 |</a>
-                                            <a href="https://github.com/Swapnil-Dubey/PyGamez" class="link-custom">Project 4</a>
-                                        </div>
-                                    </div>
-                
-                                </div>
-                
-                            </div>
-                        </section>
-                        <!--//Skills-->
-
-            <!-- WORK -->
-            <section id="work" class="full-height px-lg-5">
-                <div class="container">
-
-                    <div class="row pb-4" data-aos="fade-up">
-                        <div class="col-lg-8">
-                            <h6 class="text-brand">Projects</h6>
-                            <h1>My Recent Projects</h1>
-                        </div>
-                    </div>
-
-                    <div class="row gy-4">
-                        <div class="col-md-6 mb-4" data-aos="fade-up">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-content p-4">
-                                    <h4>Understanding & Predicting Heart Disease Presence</h4>
-                                    <p class = "white">Conducted research to predict heart disease using clinical data, aiming to identify key predictors and create an accurate early detection model. Led data preprocessing, Exploratory Data Analysis, and model development using forward selection and LASSO regression, achieving a 79.8% accuracy rate</p>
-                                    <a href="https://github.com/Swapnil-Dubey" class="link-custom">Github</a>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-6 mb-4" data-aos="fade-up">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-content p-4">
-                                    <h4>Machine Learning Analysis of Internet Usage and Mental Health</h4>
-                                    <p class = "white">Analyzed the link between internet usage and mental health among Canadians aged 15-44 using the CIUS dataset. Utilized the rpart algorithm in R for modeling and visualization, achieving 78% accuracy. Currently collaborating on a journal publication and book chapter on machine learning for social innovation</p>
-                                    <a href="https://github.com/Swapnil-Dubey" class="link-custom">Github</a>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-4" data-aos="fade-up">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-content p-4">
-                                    <h4>Portfolio Website (what you're currently seeing ◡̈)</h4>
-                                    <p class = "white">Challenged myself to develop and deploy this personal portfolio website using HTML, CSS, JS, and Bootstrap within a 24-hour timeframe</p>
-                                    <a href="https://github.com/Swapnil-Dubey/Portfolio" class="link-custom">Github</a>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-content p-4">
-                                    <h4>Water Potability Classification</h4>
-                                    <p class = "white">Developed a K-nearest neighbors classification model to assess water potability. Analyzed a dataset of 3000+ synthetic observations, achieving a 70.6% accuracy on unknown data sets. This project represented UBC at Google’s Solutions Challenge 2023</p>
-                                    <a href="https://github.com/Swapnil-Dubey/Water-Potability-Classification-GDSC" class="link-custom">Github</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-4" data-aos="fade-up">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-content p-4">
-                                    <h4>Amazon Review Emotion Analysis</h4>
-                                    <p class = "white">Developed an Amazon product review analyzer using the Rainforest API and text2emotion to analyze emotional tones. Visualized emotion distribution with Matplotlib pie charts and created a Tkinter GUI for easy user input and sentiment analysis visualization</p>
-                                    <a href="https://github.com/Swapnil-Dubey/Amazon-Review-Emotion-Analyzer" class="link-custom">Github</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-content p-4">
-                                    <h4>Pet Pal: Pet Care Tracker in Java</h4>
-                                    <p class = "white">Developed a user-friendly Java desktop app for efficient pet care management, incorporating intelligent recommendations, intuitive navigation, and scheduling for busy pet owners. Key features include pet management, interaction recording in JSON format, and personalized suggestions from pet history</p>
-                                    <a href="https://github.com/Swapnil-Dubey/PetPal" class="link-custom">Github</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-content p-4">
-                                    <h4>Text Reminder</h4>
-                                    <p class = "white">Developed an automated text-reminder application at nwHacks 2023 for scheduling reminders, boosting time management. Contributed to back-end development for real-time scheduling and collaborated on a user-friendly GUI, receiving positive feedback for usability and functionality from judges</p>
-                                    <a href="https://github.com/Swapnil-Dubey/Text-Reminder-nwHacks23" class="link-custom">Github</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-content p-4">
-                                    <h4>PyGamez</h4>
-                                    <p class = "white">Developed a console-based Python application with three games—Rock Paper Scissors, Hangman, and Quiz—that uses Python-MySQL connectivity for real-time scorekeeping. Integrated a MySQL database to store player scores and statistics, allowing for performance tracking over time</p>
-                                    <a href="https://github.com/Swapnil-Dubey/PyGames" class="link-custom">Github</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="text-uppercase text-accent fw-semibold mb-0">Other Projects</h5>
                 </div>
-            </section>
-            <!-- //WORK -->
-
-            <!-- ABOUT -->
-            <section id="about" class="full-height px-lg-5">
-                <div class="container">
-
-                    <div class="row pb-4" data-aos="fade-up">
-                        <div class="col-lg-8">
-                            <h6 class="text-brand">ABOUT</h6>
-                            <h1>My Education & Experience</h1>
-                        </div>
-                    </div>
-
-                    <div class="row gy-5">
-                        <div class="col-lg-6">
-
-                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
-                            <div class="row gy-4">
-
-                                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="600">
-                                    <div class="bg-base p-4 rounded-4 shadow-effect">
-                                        <h4>Bachelor of Science</h4>
-                                        <p class="text-brand mb-2">The University of British Columbia (2022 - 2027)</p>
-                                        <p class="mb-0">Currently a junior here! Majoring in Computer Science and Statistics. Part of UBC Science COOP</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="600">
-                                    <div class="bg-base p-4 rounded-4 shadow-effect">
-                                        <h4>High School Diploma</h4>
-                                        <p class="text-brand mb-2">Venkateshwar Global School (2018-2022)</p>
-                                        <p class="mb-0"> Did my high school diploma in Delhi, India under the CBSE-AISSCE (Science)</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="600">
-                                    <div class="bg-base p-4 rounded-4 shadow-effect">
-                                        <h4>buildspace</h4>
-                                        <p class="text-brand mb-2">Remote</p>
-                                        <p class="mb-0">Part of the S4 Batch!</p>
-                                    </div>
-                                </div>
-
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card other-project-card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="project-title mb-2">ML Research: Internet Usage &amp; Mental Health</h5>
+                                <p class="text-muted mb-0">Analyzed 20K+ CIUS survey records to model correlations between digital habits and mental health using rpart decision trees, achieving ~78% test accuracy and identifying key predictors.</p>
                             </div>
-
                         </div>
-
-                        <div class="col-lg-6">
-
-                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h3>
-                            <div class="row gy-4">
-
-                                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="600">
-                                    <div class="bg-base p-4 rounded-4 shadow-effect">
-                                        <h4>Stanford Code in Place Section Leader</h4>
-                                        <p class="text-brand mb-2">Stanford University (Apr 2024 - May 2024)</p>
-                                        <p class="mb-0">Led a cohort of 20 students in Python programming fundamentals, achieving 90% retention through interactive lesson plans and effective communication. Collaborated with three instructors to refine strategies based on student performance data, boosting retention rates by 15%.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="600">
-                                    <div class="bg-base p-4 rounded-4 shadow-effect">
-                                        <h4>Statistics Tutor</h4>
-                                        <p class="text-brand mb-2">Sealy Tutoring (Feb 2024 - Present)</p>
-                                        <p class="mb-0">Enhanced student performance by providing tailored tutoring in statistics, covering advanced topics like Exploratory Data Analysis and Regression. Developed customized lesson plans using R and Python, boosting students' understanding of complex concepts and proficiency in data analysis.</p>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="600">
-                                    <div class="bg-base p-4 rounded-4 shadow-effect">
-                                        <h4>External Director</h4>
-                                        <p class="text-brand mb-2">UBC Exchange and International Students Club (Aug 2023 - Jan 2024)</p>
-                                        <p class="mb-0">Managed external relationships, securing funding with ~20 companies and fostered sponsor engagement for club initiatives, while exercising leadership and communication skills.</p>
-                                    </div>
-                                </div>
-
-                                
-
-                                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="600">
-                                    <div class="bg-base p-4 rounded-4 shadow-effect">
-                                        <h4>Jumpstart Orientation Leader</h4>
-                                        <p class="text-brand mb-2">University of British Columbia (Aug 2023 - Sep 2023)</p>
-                                        <p class="mb-0">Facilitated a smooth transition for incoming UBC students as a Jumpstart Orientation Leader by providing academic guidance, practical information, and connecting them to campus resources. Collaborated on logistical planning for an engaging program experience encompassing both in-person and virtual components.</p>
-                                    </div>
-                                </div>
-
-
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card other-project-card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="project-title mb-2">Water Potability Classification — KNN</h5>
+                                <p class="text-muted mb-0">Built a KNN classifier on 3K+ samples with 10 physicochemical features, achieving ~70.6% cross-validated accuracy (~15% above baseline) and focusing on precision to avoid false “safe” calls.</p>
                             </div>
-
                         </div>
-
                     </div>
-
-                </div>
-            </section>
-            <!-- //ABOUT -->
-
-            <!-- CONTACT -->
-            <section id="contact" class="full-height px-lg-5">
-                <div class="container">
-
-                    <div class="row justify-content-center text-center">
-                        <div class="col-lg-8 pb-4" data-aos="fade-up">
-                            <h6 class="text-brand">CONTACT</h6>
-                            <h1>Interested in working together? Let's talk
-                            </h1>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card other-project-card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="project-title mb-2">Pet Pal: Pet Care Tracker</h5>
+                                <p class="text-muted mb-0">Java Swing app with JSON-based storage and recommendations; ~95% line/branch test coverage and ~70% faster data load via optimized serialization.</p>
+                            </div>
                         </div>
-
-                        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-                            <form action="#" class="row g-lg-3 gy-3" onsubmit="sendEmail(); reset(); return false;">
-                                <div class="form-group col-md-6">
-                                    <input type="text" id = "name" class="form-control" placeholder="Enter your name" required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="email" id = "email" class="form-control" placeholder="Enter your email" required>
-                                </div>
-                                <div class="form-group col-12">
-                                    <input type="text" id = "subject" class="form-control" placeholder="Enter subject" required>
-                                </div>
-                                <div class="form-group col-12">
-                                    <textarea name="" id = "body" rows="4" class="form-control" placeholder="Enter your message" required></textarea>
-                                </div>
-                                <div class="form-group col-12 d-grid">
-                                    <button type="submit" class="btn btn-brand">Contact me</button>
-                                </div>
-                            </form>
-                        </div>
-                        <script src = "https://smtpjs.com/v3/smtp.js"></script>
-                        <script>
-                            function sendEmail(){
-                                Email.send({
-                                        SecureToken:"cf689901-401f-4525-9ca2-81dbe291c947",
-                                        To : 'dubeyswapnil8@gmail.com',
-                                        From: "dubeyswapnil8@gmail.com",
-                                        Subject : "New Contact Form Enquiry on your personal website!",
-                                        Body : "Name: " + document.getElementById("name").value
-                                        + "<br> Email: " + document.getElementById("email").value
-                                        + "<br> Subject: " + document.getElementById("subject").value
-                                        + "<br> Message: " + document.getElementById("body").value
-                                    }).then(
-                                    message => alert("Thank you for contacting me!")
-                                    );
-                            }
-                        </script>
                     </div>
-
-
-                </div>
-            </section>
-            <!-- //CONTACT -->
-
-            <!-- FOOTER -->
-            <footer class="py-5 px-lg-5">
-                <div class="container">
-                    <div class="row gy-4 justify-content-between">
-                        <div class="col-auto">
-                            <p class="black">Created by <a href="#" class="fw-bold">Me˙𐃷˙</a></p>
-                        </div>
-                        <div class="col-auto">
-                            <div class="social-icons">
-                                <a href="https://www.linkedin.com/in/swapnildub/"><i class="lab la-linkedin"></i></a>
-                                <a href="https://github.com/Swapnil-Dubey"><i class="lab la-github"></i></a>
-                                <a href="https://twitter.com/swapnil_dub"><i class="lab la-twitter"></i></a>
-                                
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card other-project-card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="project-title mb-2">Amazon Review Emotion Analysis</h5>
+                                <p class="text-muted mb-0">GUI tool that pulls Amazon reviews via Rainforest API, extracts emotional tone with text2emotion, and visualizes the distribution using Matplotlib.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </footer>
-            <!-- //FOOTER -->
+            </div>
+        </section>
+        <!-- //PROJECTS -->
 
-            
-        <!-- //CONTENT WRAPPER -->
-        </div>
-    
-    
+        <!-- SKILLS -->
+        <section id="skills" class="section-padding bg-surface">
+            <div class="container">
+                <div class="section-header mb-5 text-center">
+                    <h2 class="section-title">Skills</h2>
+                    <p class="text-muted">Concise snapshot of the tools and methods I work with.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Languages &amp; Data</h5>
+                                <ul class="mb-0">
+                                    <li>Python, R, Java, SQL, HTML/CSS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Data &amp; ML</h5>
+                                <ul class="mb-0">
+                                    <li>Logistic regression, LASSO, KNN, decision trees</li>
+                                    <li>Cross-validation, feature engineering, model evaluation (precision/recall, F1)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">GenAI &amp; NLP</h5>
+                                <ul class="mb-0">
+                                    <li>LLMs (OpenAI, Cohere, Anthropic), RAG pipelines, embeddings search, Whisper ASR</li>
+                                    <li>Prompt engineering (structured and chain-of-thought)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">BI &amp; Automation</h5>
+                                <ul class="mb-0">
+                                    <li>Power BI, Power Query, Excel (pivots)</li>
+                                    <li>Power Apps, Power Automate, SharePoint (Lists, Pages, Permissions), ServiceNow</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Security, Risk &amp; Product</h5>
+                                <ul class="mb-0">
+                                    <li>Cyber risk assessments (AL1/AL2), risk register management, SOC/SOX context, PAM</li>
+                                    <li>Requirements gathering, user stories, Jira/Confluence, change management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SKILLS -->
 
+        <!-- LEADERSHIP -->
+        <section id="leadership" class="section-padding">
+            <div class="container">
+                <div class="section-header mb-5 text-center">
+                    <h2 class="section-title">Leadership &amp; Teaching</h2>
+                    <p class="text-muted">Roles focused on mentorship, outreach, and community building.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Statistics Tutor — Sealy Tutoring</h5>
+                                <p class="text-muted">Feb 2024 – Present · Vancouver, BC</p>
+                                <ul class="mb-0">
+                                    <li>Provide 1:1 tutoring in EDA, hypothesis testing, and regression to undergraduates.</li>
+                                    <li>Develop custom problem sets in R/Python; students typically improve by around 1.5 letter grades.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Stanford Code in Place — Section Leader</h5>
+                                <p class="text-muted">Apr 2024 – May 2024 · Remote</p>
+                                <ul class="mb-0">
+                                    <li>Mentored 20+ students in Python fundamentals through interactive projects and discussions.</li>
+                                    <li>Collaborated with instructors to refine teaching approaches, helping reach ~90% retention.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Outreach Member — Canadian Computing Society (CCubed)</h5>
+                                <p class="text-muted">Feb 2024 – Present · Vancouver, BC</p>
+                                <ul class="mb-0">
+                                    <li>Secured $5K+ in sponsorships for tech education events through outreach and relationship management with partner organizations.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">External Director — UBC Exchange Club</h5>
+                                <p class="text-muted">Aug 2023 – Feb 2024 · Vancouver, BC</p>
+                                <ul class="mb-0">
+                                    <li>Raised about $3K by collaborating with 25+ local businesses and led user-focused cultural programs for exchange students.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Orientation Leader — UBC Jumpstart</h5>
+                                <p class="text-muted">Aug 2023 – Sept 2023 · Vancouver, BC</p>
+                                <ul class="mb-0">
+                                    <li>Organized and led 15+ integration events for incoming students, achieving high satisfaction scores by focusing on community-building and clear communication.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //LEADERSHIP -->
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/main.js"></script>
+        <!-- EDUCATION -->
+        <section id="education" class="section-padding bg-surface">
+            <div class="container">
+                <div class="section-header mb-5 text-center">
+                    <h2 class="section-title">Education</h2>
+                    <p class="text-muted">Academic background in computer science and statistics.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">BSc in Computer Science &amp; Statistics, The University of British Columbia</h5>
+                                <p class="text-muted mb-2">Sep 2022 – May 2027 · Vancouver, BC</p>
+                                <p class="mb-2">Dean’s Honour List · Science Co-op · GPA: 3.7/4.0</p>
+                                <p class="mb-0">Selected coursework: Applied Machine Learning; Computer Vision; Introduction to Data Science; Relational Databases; Algorithms &amp; Data Structures; Statistical Modelling for Data Science.</p>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h6 class="card-title mb-1">Venkateshwar Global School — High School Diploma</h6>
+                                <p class="text-muted mb-0">Science Stream, CBSE-AISSCE · 2018–2022 · New Delhi, India. Other: buildspace S4 participant.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //EDUCATION -->
 
-    <script src="./assets/js/jquery-3.2.1.min.js"></script>
-    <script src="js/app.js"></script>
-    <!-- HTML HEAD -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <!-- RESUME -->
+        <section id="resume" class="section-padding">
+            <div class="container">
+                <div class="section-header mb-4 text-center">
+                    <h2 class="section-title">Resume</h2>
+                    <p class="text-muted">You can find my latest resume here.</p>
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-accent btn-lg" href="./Swapnil_Dubey_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <a href="https://www.linkedin.com/in/swapnildub/" target="_blank" rel="noopener" class="text-decoration-none"><i class="lab la-linkedin fs-3"></i></a>
+                        <a href="https://github.com/swapnil-dubey" target="_blank" rel="noopener" class="text-decoration-none"><i class="lab la-github fs-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //RESUME -->
+
+        <!-- CONTACT -->
+        <section id="contact" class="section-padding bg-surface">
+            <div class="container">
+                <div class="section-header mb-4 text-center">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="text-muted">Interested in working together, or have a role that fits my background? Feel free to reach out.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="d-flex flex-column flex-md-row justify-content-center align-items-start gap-4 contact-links">
+                            <a href="mailto:sdubey14@student.ubc.ca" class="d-flex align-items-center gap-2"><i class="las la-envelope"></i><span>sdubey14@student.ubc.ca</span></a>
+                            <a href="https://www.linkedin.com/in/swapnildub/" target="_blank" rel="noopener" class="d-flex align-items-center gap-2"><i class="lab la-linkedin"></i><span>LinkedIn</span></a>
+                            <a href="https://github.com/swapnil-dubey" target="_blank" rel="noopener" class="d-flex align-items-center gap-2"><i class="lab la-github"></i><span>GitHub</span></a>
+                            <a href="tel:+12368638210" class="d-flex align-items-center gap-2"><i class="las la-phone"></i><span>+1 (236) 863-8210</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //CONTACT -->
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Configuring and initializing Particles.js
-        particlesJS("particles-js", {
-        "particles": {
-            "number": {
-            "value":60,
-            "density": {
-                "enable": true,
-                "value_area": 800
-            }
-            },
-            "color": {
-            "value": "#000"
-            },
-            "shape": {
-            "type": "circle",
-            "stroke": {
-                "width": 0,
-                "color": "#000000"
-            },
-            "polygon": {
-                "nb_sides": 5
-            },
-            "image": {
-                "src": "img/github.svg",
-                "width": 100,
-                "height": 100
-            }
-            },
-            "opacity": {
-            "value": 0.3,
-            "random": false,
-            "anim": {
-                "enable": false,
-                "speed": 1,
-                "opacity_min": 0.1,
-                "sync": false
-            }
-            },
-            "size": {
-            "value": 3,
-            "random": true,
-            "anim": {
-                "enable": false,
-                "speed": 1,
-                "size_min": 0.1,
-                "sync": false
-            }
-            },
-            "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#000",
-            "opacity": 0.25,
-            "width":1
-            },
-            "move": {
-            "enable": true,
-            "speed": 6,
-            "direction": "none",
-            "random": false,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-                "enable": false,
-                "rotateX": 600,
-                "rotateY": 1200
-            }
-            }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-            "onhover": {
-                "enable": true,
-                "mode": "repulse"
-            },
-            "onclick": {
-                "enable": true,
-                "mode": "push"
-            },
-            "resize": true
-            },
-            "modes": {
-            "grab": {
-                "distance": 800,
-                "line_linked": {
-                "opacity": 1
-                }
-            },
-            "bubble": {
-                "distance": 800,
-                "size": 80,
-                "duration": 2,
-                "opacity": 0.8,
-                "speed": 3
-            },
-            "repulse": {
-                "distance": 400,
-                "duration": 0.4
-            },
-            "push": {
-                "particles_nb": 4
-            },
-            "remove": {
-                "particles_nb": 2
-            }
-            }
-        },
-        "retina_detect": true
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const storedTheme = localStorage.getItem('theme');
+
+        if (storedTheme === 'light') {
+            body.classList.remove('theme-dark');
+            body.classList.add('theme-light');
+            themeToggle.innerHTML = '<i class="las la-sun"></i>';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const isDark = body.classList.contains('theme-dark');
+            body.classList.toggle('theme-dark', !isDark);
+            body.classList.toggle('theme-light', isDark);
+            themeToggle.innerHTML = isDark ? '<i class="las la-sun"></i>' : '<i class="las la-moon"></i>';
+            localStorage.setItem('theme', isDark ? 'light' : 'dark');
         });
-
     </script>
-
 </body>
 </html>
