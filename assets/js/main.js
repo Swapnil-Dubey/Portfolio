@@ -12,5 +12,31 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-  
+
 });
+
+const body = document.body;
+const themeToggle = document.getElementById('theme-toggle');
+const savedTheme = localStorage.getItem('theme');
+
+if (savedTheme === 'light') {
+  body.classList.add('light-mode');
+  themeToggle.innerHTML = '<i class="las la-sun"></i>';
+}
+
+function updateThemeIcon() {
+  if (body.classList.contains('light-mode')) {
+    themeToggle.innerHTML = '<i class="las la-sun"></i>';
+    localStorage.setItem('theme', 'light');
+  } else {
+    themeToggle.innerHTML = '<i class="las la-moon"></i>';
+    localStorage.setItem('theme', 'dark');
+  }
+}
+
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('light-mode');
+  updateThemeIcon();
+});
+
+updateThemeIcon();
