@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 
 :root {
+    --color-brand: #e63946 !important;
+    --color-brand2: #b21f2d !important;
+    --sidbar-width: 240px !important;
+    --font-base: "Bai Jamjuree" !important;
+
+    --color-heading: #f8f9fa !important;
+    --color-body: #d1d5db !important;
+    --color-base: #0f1117 !important;
+    --color-base2: #0a0c10 !important;
     --color-body: #6c757d !important;
     --color-heading: #0b132b !important;
     --color-base: #0f172a !important;
@@ -13,14 +22,23 @@
 
 body {
     background-color: var(--color-base2) !important;
-    color: var(--color-heading) !important;
+    color: var(--color-body) !important;
     font-family: var(--font-base), sans-serif !important;
+}
+
+body.light-mode {
+    --color-heading: #0b0d11 !important;
+    --color-body: #4a5568 !important;
+    --color-base: #ffffff !important;
+    --color-base2: #f5f5f5 !important;
 }
 
 h1,h2,h3,h6 {
     color: var(--color-heading) !important;
     font-weight: 700 !important;
 }
+h5, h4, h6 {
+    color: var(--color-heading) !important;
 h5 {
     color: var(--color-base2) !important;
     font-weight: 700 !important;
@@ -34,7 +52,7 @@ h4 {
     color: var(--color-heading) !important;
 }
 .white, .mb-0 {
-    color: var(--color-base2) !important;
+    color: var(--color-body) !important;
 }
 a {
     text-decoration: none !important;
@@ -81,12 +99,12 @@ a:hover {
     justify-content: center !important;
     font-size: 32px !important;
     background-color: var(--color-brand) !important;
-    color: var(--color-base) !important;
+    color: #fff !important;
 }
 
 /* NAVBAR */
 .navbar {
-    background-color: var(--color-base) !important;
+    background-color: #0b0d11 !important;
 }
 
 .navbar .nav-link {
@@ -101,6 +119,27 @@ a:hover {
 
 .navbar .nav-link.active {
     color: var(--color-brand) !important;
+}
+
+.btn-toggle-theme {
+    color: #fff !important;
+    border: 1px solid rgba(255,255,255,0.25) !important;
+    background: transparent !important;
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-toggle-theme:hover {
+    border-color: var(--color-brand) !important;
+    color: var(--color-brand) !important;
+}
+
+body.light-mode .navbar {
+    background-color: #0b0d11 !important;
 }
 
 @media (min-width: 992px) {
@@ -152,13 +191,13 @@ a:hover {
 .btn-brand {
     background-color: var(--color-brand) !important;
     border-color: var(--color-brand) !important;
-    color: var(--color-base) !important;
+    color: #fff !important;
 }
 
 .btn-brand:hover,
 .btn-brand:focus {
     background-color: var(--color-brand2) !important;
-    color: var(--color-base) !important;
+    color: #fff !important;
     border-color: var(--color-brand2) !important;
 }
 
@@ -170,6 +209,7 @@ a:hover {
 .btn-outline-light:hover,
 .btn-outline-light:focus {
     background-color: var(--color-brand) !important;
+    color: #fff !important;
     color: var(--color-base) !important;
 }
 
@@ -200,6 +240,15 @@ a:hover {
 
 .card-custom .card-custom-image img {
     transition: all 0.4s ease !important;
+}
+
+.bg-base h6,
+.bg-base h5,
+.bg-base h4,
+.bg-base h1,
+.bg-base h2,
+.bg-base h3 {
+    color: var(--color-heading) !important;
 }
 
 .card-custom:hover .card-custom-image img {
