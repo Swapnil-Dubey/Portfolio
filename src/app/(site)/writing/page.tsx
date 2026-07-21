@@ -11,7 +11,7 @@ export default function WritingPage() {
       <h1 className="mb-4">Writing</h1>
       <p className="text-text-muted text-sm leading-relaxed mb-16 max-w-[500px]">
         Posts on product thinking, data engineering, and things I&rsquo;m
-        figuring out. Nothing here yet — check back soon.
+        figuring out. Nothing here yet - check back soon.
       </p>
 
       <div className="rounded-lg border border-border border-dashed p-12 text-center">

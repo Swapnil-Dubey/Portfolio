@@ -16,40 +16,46 @@ clear - clear terminal`,
 4th-year CS & Statistics student @ UBC (Dean's Honour List, GPA 3.7/4.0).
 Incoming Technical Product Manager Intern @ Electronic Arts (Sept–Dec 2026).
 Software Engineer Co-op @ BCI (Jan–Apr 2026).
-Business & Cyber Risk Analyst Co-op @ Teck Resources (May–Dec 2025).
+Cyber Risk Analyst Co-op @ Teck Resources (Sep–Dec 2025).
+Business Analyst Co-op @ Teck Resources (May–Aug 2025).
 I build ML/data engineering pipelines, GenAI tools, and internal automation.`,
-  experience: `[1] Electronic Arts — Technical Product Manager Intern (Sept–Dec 2026) [INCOMING]
-• Production Infrastructure & Engineering — internal platforms, tools, and services.
+  experience: `[1] Electronic Arts - Technical Product Manager Intern (Sept–Dec 2026) [INCOMING]
+• Production Infrastructure & Engineering - internal platforms, tools, and services.
 
-[2] British Columbia Investment Management Corporation (BCI) — Software Engineer Co-op (Jan–Apr 2026)
+[2] British Columbia Investment Management Corporation (BCI) - Software Engineer Co-op (Jan–Apr 2026)
 • Owned end-to-end delivery of an internal platform serving 70+ Legal Affairs users.
 • Saved ~3 hrs/week for 100+ stakeholders via a Python LLM/RAG pipeline on Azure.
 • Unified 3 siloed systems into a single access layer for 100+ Legal Affairs users.
 
-[3] Teck Resources Ltd. — Business & Cyber Risk Analyst Co-op (May–Dec 2025)
-• Primary PM/POC for ServiceNow intake redesign for 10K+ employees.
-• Lifted phishing report rate ~20% across 10K+ employees via A/B testing.
-• Cut report prep ~4 hrs/month for VP and Board governance cycles.`,
-  projects: `[1] Fraud Detection MLOps Pipeline (Python, XGBoost, MLflow, FastAPI, Docker) — Mar 2026
+[3] Teck Resources Ltd. - Cyber Risk Analyst Co-op (Sep–Dec 2025)
+• Designed centralized Cybersecurity intake with ServiceNow team - defined services, request types, SLAs.
+• Built Power Apps + Power Automate workflow - eliminated 10+ manual entries/week.
+• Authored requirements as primary POC using Jira/Confluence.
+
+[4] Teck Resources Ltd. - Business Analyst Co-op (May–Aug 2025)
+• Improved phishing report rate ~20% across 10K+ employees via A/B testing and segmentation.
+• Prepared quarterly board reports for VP, CFO, and Board governance cycles.
+• Co-planned phishing simulations for 10K+ employees aligned to KPI targets.`,
+  projects: `[1] Fraud Detection MLOps Pipeline (Python, XGBoost, MLflow, FastAPI, Docker) - Mar 2026
 • 0.874 AUPRC (21% above baseline) on 590K+ transactions.
 • MLflow model registry + Docker + GitHub Actions CI/CD + Evidently drift monitoring.
 
-[2] Music Streaming Revenue Forecasting (Python, Prophet, ARIMA) — Feb 2026
+[2] Music Streaming Revenue Forecasting (Python, Prophet, ARIMA) - Feb 2026
 • Benchmarked ARIMA, Prophet, and Exponential Smoothing across 5 DSPs, 10 territories, 4 BUs.
 • Detected regime changes via CoV analysis; delivered Finance-ready output.
 
-[3] Financial Data Pipeline (PySpark, Airflow, dbt, BigQuery, Docker) — Jan 2026
+[3] Financial Data Pipeline (PySpark, Airflow, dbt, BigQuery, Docker) - Jan 2026
 • 7,840+ daily OHLCV records via 5-stage Airflow DAG into BigQuery.
 • 3-layer dbt data model with 6 automated schema tests.
 
-[4] Prescripto — AI Healthcare Transcription (Python, Whisper, Claude API) — Mar 2025
+[4] Prescripto - AI Healthcare Transcription (Python, Whisper, Claude API) - Mar 2025
 • Speech-to-summary pipeline supporting 50+ languages, reducing SOAP note time 35%.
 • Cut medical hallucinations 40% via dual validation against ICD-11 codes.`,
   skills: `Languages & Databases: Python; R; SQL (Azure SQL, PostgreSQL, Oracle); JavaScript; Git; REST APIs
 Product & Analytics: Requirements gathering; A/B testing; KPI design; Stakeholder readouts; Jira; Confluence
 AI & ML: Scikit-learn; XGBoost; MLflow; Evidently; LLMs (Claude, OpenAI); RAG pipelines
 Tools & Platforms: Docker; GitHub Actions; FastAPI; Power BI; Power Automate; Azure; GCP`,
-  education: `University of British Columbia — BSc Computer Science & Statistics (Sep 2022 – May 2027)
+  education: `University of British Columbia - BSc Computer Science & Statistics (Sep 2022 – May 2027)
 Dean's Honour List | Science Co-op | GPA 3.7/4.0`,
   contact: `Email: sdubey14@student.ubc.ca
 LinkedIn: linkedin.com/in/swapnildub/

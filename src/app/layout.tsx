@@ -25,7 +25,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: {
     default: "Swapnil Dubey",
-    template: "%s — Swapnil Dubey",
+    template: "%s - Swapnil Dubey",
   },
   description:
     "Computer Science + Statistics @ UBC. Incoming Technical Product Manager Intern @ Electronic Arts. Open to new grad PM, TPM, and analytics roles starting mid-2027.",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Swapnil Dubey — CS + Statistics @ UBC, Incoming TPM Intern @ EA",
+        alt: "Swapnil Dubey - CS + Statistics @ UBC, Incoming TPM Intern @ EA",
       },
     ],
   },

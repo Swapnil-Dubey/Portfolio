@@ -16,18 +16,29 @@ const workExperience = [
     org: "British Columbia Investment Management Corporation (BCI)",
     dates: "Jan – Apr 2026",
     bullets: [
-      "Owned end-to-end delivery of an internal platform serving 70+ Legal Affairs users — gathered requirements, defined acceptance criteria, and managed dev/staging/production releases across the full SDLC.",
-      "Saved ~3 hrs/week for 100+ stakeholders by scoping and shipping a Python LLM/RAG pipeline on Azure — translated a manual summarization workflow into an automated, stakeholder-approved solution.",
-      "Unified 3 siloed systems into a single access layer for 100+ Legal Affairs users by integrating external REST APIs and Azure SQL — cutting ad-hoc data requests and reducing sync prep time ~60%.",
+      "Owned end-to-end delivery of an internal platform serving 70+ Legal Affairs users - gathered requirements, defined acceptance criteria, and managed dev/staging/production releases across the full SDLC.",
+      "Saved ~3 hrs/week for 100+ stakeholders by scoping and shipping a Python LLM/RAG pipeline on Azure - translated a manual summarization workflow into an automated, stakeholder-approved solution.",
+      "Unified 3 siloed systems into a single access layer for 100+ Legal Affairs users by integrating external REST APIs and Azure SQL - cutting ad-hoc data requests and reducing sync prep time ~60%.",
     ],
   },
   {
-    role: "Business and Cyber Risk Analyst Co-op",
+    role: "Cyber Risk Analyst Co-op",
     org: "Teck Resources Ltd.",
-    dates: "May – Dec 2025",
+    team: "Digital Risk & Compliance",
+    dates: "Sep – Dec 2025",
     bullets: [
-      "Served as primary PM/POC for a ServiceNow intake redesign for 10K+ employees — defined services, request types, SLAs, and evidence requirements.",
-      "Lifted phishing report rate ~20% across 10K+ employees by designing A/B tests, applying send-time and segmentation analysis, and presenting findings at quarterly board readouts.",
+      "Partnered with the ServiceNow team to design the centralized Cybersecurity intake - defined services, request types, SLAs, and required evidence; authored requirements and served as primary POC using Jira/Confluence.",
+      "Built a Power Apps + Power Automate workflow to mirror ServiceNow intake fields to SharePoint - eliminated 10+ manual entries/week and improved audit traceability.",
+    ],
+  },
+  {
+    role: "Business Analyst Co-op",
+    org: "Teck Resources Ltd.",
+    team: "Digital Risk Practice & Resilience",
+    dates: "May – Aug 2025",
+    bullets: [
+      "Improved employee phishing report rate by ~20% across 10K+ employees through segmentation insights, send-time analysis, and A/B testing.",
+      "Prepared quarterly board reports for VP, CFO, and Board governance cycles - compiled training, phishing, and compliance KPIs from LMS/phishing/SharePoint tools.",
     ],
   },
 ];
@@ -92,29 +103,8 @@ export default function Home() {
         <p className="mt-6 text-sm font-semibold text-accent">
           Open to new grad Technical Product Manager, Product Manager, Product
           Analyst, and Analytics Engineer roles starting mid-2027. Based in
-          Vancouver, BC.
+          Vancouver, BC - open to relocating within Canada.
         </p>
-
-        <div className="mt-8 max-w-[700px] space-y-4 text-base leading-relaxed">
-          <p>
-            I study computer science and statistics at UBC because the
-            combination lets me sit at the intersection of engineering teams and
-            business problems without hand-waving either side. At BCI I shipped
-            an internal platform end-to-end — from requirements gathering
-            through production releases — and built an LLM pipeline that
-            replaced a manual workflow for 100+ stakeholders. At Teck I ran a
-            ServiceNow redesign for 10K+ employees and designed the A/B testing
-            framework that lifted phishing reporting by 20%.
-          </p>
-          <p>
-            This fall I join Electronic Arts as a Technical Product Manager
-            Intern on Production Infrastructure & Engineering, working on the
-            internal platforms, tools, and services that EA studios depend on. I
-            want to keep working on products where the hard part is deciding what
-            to build, not just how to build it — and where the answer requires
-            both data and judgment.
-          </p>
-        </div>
 
         <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">
           <a href="mailto:sdubey14@student.ubc.ca">Email</a>
@@ -164,7 +154,7 @@ export default function Home() {
                     {job.team && (
                       <span className="text-text-muted">
                         {" "}
-                        — {job.team}
+                        , {job.team}
                       </span>
                     )}
                   </p>
@@ -202,7 +192,7 @@ export default function Home() {
             Academic OS
           </h3>
           <blockquote className="text-text-muted italic text-sm leading-relaxed border-l-2 border-accent/40 pl-4 mb-4">
-            &ldquo;Students don&rsquo;t lack sources — they lack a single
+            &ldquo;Students don&rsquo;t lack sources - they lack a single
             synthesized judgment they can trust.&rdquo;
           </blockquote>
           <p className="text-text-muted text-xs font-mono">

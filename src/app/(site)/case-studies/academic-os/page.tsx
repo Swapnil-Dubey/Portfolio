@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { TableOfContents } from "@/components/table-of-contents";
 
 export const metadata: Metadata = {
-  title: "Academic OS — Case Study",
+  title: "Academic OS - Case Study",
   description:
     "A PM case study on building a course planning tool that synthesizes what UBC CS students already look up separately.",
 };
@@ -76,7 +76,7 @@ export default function AcademicOSPage() {
             <p className="font-semibold text-accent mb-2">Research note</p>
             <p>
               The ten interviews below are constructed research personas built
-              for a self-directed case study &mdash; not real user interviews.
+              for a self-directed case study - not real user interviews.
               The synthesis, framing, and prioritization decisions are the actual
               work being shown here.
             </p>
@@ -257,7 +257,7 @@ export default function AcademicOSPage() {
               workload capacity, and course quality every registration cycle, but
               no consistent source holds course quality information, estimates
               workload in advance, or synthesizes across these three dimensions
-              &mdash; forcing students to manually cross-reference scattered
+              - forcing students to manually cross-reference scattered
               sources and re-derive the same integrated judgment from scratch
               every term, which costs them significant mental effort.
             </blockquote>
@@ -329,9 +329,9 @@ export default function AcademicOSPage() {
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
                 Academic OS aggregates and cross-references the sources UBC CS
-                students already consult separately &mdash; Academic Calendar
+                students already consult separately - Academic Calendar
                 and Workday for program requirements, UBCGrades and RateMyProf
-                for course quality &mdash; into a single synthesized output,
+                for course quality - into a single synthesized output,
                 replacing the manual cross-checking students currently do
                 themselves every registration cycle.
               </p>
@@ -339,8 +339,8 @@ export default function AcademicOSPage() {
                 A student provides their program, year, credits remaining, and
                 requirement gaps once. Academic OS returns a single synthesized
                 recommendation: a set of courses with the reasoning for each
-                shown alongside it &mdash; which requirement bucket it satisfies
-                and why, and what its quality signal is across sources &mdash;
+                shown alongside it - which requirement bucket it satisfies
+                and why, and what its quality signal is across sources -
                 rather than raw data the student has to interpret themselves.
               </p>
               <p>
@@ -438,26 +438,26 @@ export default function AcademicOSPage() {
                   <p className="text-sm leading-relaxed mb-3">
                     Every candidate data source for grounding a
                     course-to-career mapping fails the product&rsquo;s core
-                    standard &mdash; verified, live synthesis rather than
+                    standard - verified, live synthesis rather than
                     plausible guessing:
                   </p>
                   <ul className="space-y-2 text-sm">
                     <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                      <strong>Self-authored mapping</strong> &mdash; opinion,
+                      <strong>Self-authored mapping</strong> - opinion,
                       not verifiable data; inconsistent across authors
                     </li>
                     <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                      <strong>LLM-generated mapping</strong> &mdash;
+                      <strong>LLM-generated mapping</strong> -
                       pattern-matched plausibility, not grounded fact; the exact
                       failure mode Academic OS is positioned against
                     </li>
                     <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
                       <strong>Self-labeled &ldquo;personal advice&rdquo;</strong>{" "}
-                      &mdash; doesn&rsquo;t resolve the credibility gap, just
+                      - doesn&rsquo;t resolve the credibility gap, just
                       relocates it
                     </li>
                     <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                      <strong>Real professor interviews</strong> &mdash;
+                      <strong>Real professor interviews</strong> -
                       highest-quality option, but still opinion (professors lack
                       labor-market outcome data), inconsistent with the case
                       study&rsquo;s existing research-integrity boundary
@@ -484,7 +484,7 @@ export default function AcademicOSPage() {
                   </p>
                   <p className="text-sm leading-relaxed">
                     Reinforces the product&rsquo;s differentiation thesis
-                    &mdash; Academic OS competes on grounded, verifiable
+                    - Academic OS competes on grounded, verifiable
                     synthesis, not on capability breadth. Including an
                     ungrounded feature to chase completeness would undercut the
                     exact claim the product is built on.
@@ -513,7 +513,7 @@ export default function AcademicOSPage() {
                   </p>
                   <p className="text-sm leading-relaxed">
                     Research (S1, S2) shows distrust in students&rsquo; own
-                    manual cross-checking &mdash; not distrust in a hypothetical
+                    manual cross-checking - not distrust in a hypothetical
                     automated tool&rsquo;s output. No interview data exists on
                     whether students would trust a system&rsquo;s synthesized
                     recommendation. Claiming this as a solved or unsolved problem

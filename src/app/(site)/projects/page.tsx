@@ -13,7 +13,7 @@ const projectGroups = [
         title: "Fraud Detection MLOps Pipeline",
         year: "Mar 2026",
         description:
-          "Framed the problem, defined success metrics (AUPRC, F2 threshold, drift triggers), and evaluated model tradeoffs (XGBoost vs. LR on imbalanced data) — achieved 0.874 AUPRC (21% above baseline) on 590K+ transactions. Decoupled model updates from API code via MLflow alias-based champion promotion; containerized inference with Docker, automated CI/CD via GitHub Actions, and monitored production drift with Evidently.",
+          "Framed the problem, defined success metrics (AUPRC, F2 threshold, drift triggers), and evaluated model tradeoffs (XGBoost vs. LR on imbalanced data) - achieved 0.874 AUPRC (21% above baseline) on 590K+ transactions. Decoupled model updates from API code via MLflow alias-based champion promotion; containerized inference with Docker, automated CI/CD via GitHub Actions, and monitored production drift with Evidently.",
         tags: ["Python", "XGBoost", "MLflow", "FastAPI", "Docker", "GitHub Actions", "Evidently"],
         github: "https://github.com/swapnil-dubey",
       },
@@ -47,7 +47,7 @@ const projectGroups = [
         title: "Music Streaming Revenue Forecasting",
         year: "Feb 2026",
         description:
-          "Scoped and built a revenue accrual forecasting engine for Finance — benchmarked ARIMA, Prophet, and Exponential Smoothing to justify an RPS-based approach given 8-month data constraints across 5 DSPs, 10 territories, 4 BUs. Eliminated forecast bias by detecting structural regime changes via CoV analysis; delivered Finance-ready output with conservative/aggressive scenarios.",
+          "Scoped and built a revenue accrual forecasting engine for Finance - benchmarked ARIMA, Prophet, and Exponential Smoothing to justify an RPS-based approach given 8-month data constraints across 5 DSPs, 10 territories, 4 BUs. Eliminated forecast bias by detecting structural regime changes via CoV analysis; delivered Finance-ready output with conservative/aggressive scenarios.",
         tags: ["Python", "pandas", "Prophet", "ARIMA", "statsmodels", "matplotlib"],
       },
       {
@@ -75,10 +75,10 @@ const projectGroups = [
     category: "Full-Stack & Product",
     projects: [
       {
-        title: "Prescripto — AI Healthcare Transcription",
+        title: "Prescripto - AI Healthcare Transcription",
         year: "Mar 2025",
         description:
-          "Defined the product problem (language barriers + admin overhead in clinical settings), scoped AI-assisted solution, and shipped a speech-to-summary pipeline supporting 50+ languages — reducing SOAP note time 35% (143 ms/request). Cut critical medical hallucinations 40% by implementing a dual validation layer combining regex and Claude-3 semantic checks against ICD-11 codes.",
+          "Defined the product problem (language barriers + admin overhead in clinical settings), scoped AI-assisted solution, and shipped a speech-to-summary pipeline supporting 50+ languages - reducing SOAP note time 35% (143 ms/request). Cut critical medical hallucinations 40% by implementing a dual validation layer combining regex and Claude-3 semantic checks against ICD-11 codes.",
         tags: ["Python", "Whisper API", "Gemini 2.0 Flash", "Claude API"],
       },
       {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Resume",
-  description: "Swapnil Dubey — resume. Computer Science + Statistics @ UBC, incoming TPM Intern @ Electronic Arts.",
+  description: "Swapnil Dubey - resume. Computer Science + Statistics @ UBC, incoming TPM Intern @ Electronic Arts.",
 };
 
 export default function ResumePage() {
@@ -55,41 +55,66 @@ export default function ResumePage() {
             </div>
             <ul className="space-y-2 text-sm leading-relaxed">
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                Owned end-to-end delivery of an internal platform serving 70+ Legal Affairs users — gathered requirements, defined acceptance criteria, and managed dev/staging/production releases across the full SDLC using Python, SQL, PowerApps
+                Owned end-to-end delivery of an internal platform serving 70+ Legal Affairs users - gathered requirements, defined acceptance criteria, and managed dev/staging/production releases across the full SDLC using Python, SQL, PowerApps
               </li>
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                Saved ~3 hrs/week for 100+ stakeholders by scoping and shipping a Python LLM/RAG pipeline on Azure — translated a manual summarization workflow into an automated, stakeholder-approved solution
+                Saved ~3 hrs/week for 100+ stakeholders by scoping and shipping a Python LLM/RAG pipeline on Azure - translated a manual summarization workflow into an automated, stakeholder-approved solution
               </li>
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
                 Eliminated manual data entry across 2 legal trackers by building an email parsing pipeline that extracted structured JSON via Claude API and wrote classified records directly to SharePoint
               </li>
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                Unified 3 siloed systems into a single access layer for 100+ Legal Affairs users by integrating external REST APIs and Azure SQL — cutting ad-hoc data requests to the team and reducing sync prep time ~60%
+                Unified 3 siloed systems into a single access layer for 100+ Legal Affairs users by integrating external REST APIs and Azure SQL - cutting ad-hoc data requests to the team and reducing sync prep time ~60%
               </li>
             </ul>
           </article>
 
-          {/* Teck */}
+          {/* Teck - Cyber Risk */}
           <article>
             <div className="flex flex-col sm:flex-row sm:justify-between gap-1 mb-2">
               <div>
-                <h3 className="text-base font-semibold">Business and Cyber Risk Analyst Co-op</h3>
-                <p className="text-sm text-text-muted italic">Teck Resources Ltd.</p>
+                <h3 className="text-base font-semibold">Cyber Risk Analyst Co-op</h3>
+                <p className="text-sm text-text-muted italic">Teck Resources Ltd. - Digital Risk & Compliance</p>
               </div>
-              <time className="text-xs font-mono text-text-muted whitespace-nowrap">May – Dec 2025</time>
+              <time className="text-xs font-mono text-text-muted whitespace-nowrap">Sep – Dec 2025</time>
             </div>
             <ul className="space-y-2 text-sm leading-relaxed">
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                Served as primary PM/POC for a ServiceNow intake redesign for 10K+ employees — defined services, request types, SLAs, and evidence requirements; managed backlog and documentation in Jira and Confluence
+                Partnered with the ServiceNow team to design the centralized Cybersecurity intake ("single front door") - defined services, request types, SLAs, and required evidence
               </li>
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                Lifted phishing report rate ~20% across 10K+ employees by designing A/B tests, applying send-time and segmentation analysis, and presenting findings at quarterly board readouts for VP, CFO, and CISO
+                Authored requirements and served as primary POC using Jira/Confluence for backlog management and documentation
               </li>
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                Cut report prep ~4 hrs/month for VP and Board governance cycles by joining LMS, phishing, and finance datasets via SQL and Power Query to produce KPI roll-ups and MoM variance analyses
+                Built a Power Apps + Power Automate workflow to mirror ServiceNow intake fields to SharePoint - eliminated 10+ manual entries/week and improved audit traceability
               </li>
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                Eliminated 10+ manual entries/week and improved enterprise audit traceability by shipping a Power Automate workflow that mirrored ServiceNow intake fields directly to SharePoint risk tracking lists
+                Delivered weekly dashboards and leadership readouts covering request volume, SLA adherence, time-to-close, and portfolio risk trends
+              </li>
+            </ul>
+          </article>
+
+          {/* Teck - Business Analyst */}
+          <article>
+            <div className="flex flex-col sm:flex-row sm:justify-between gap-1 mb-2">
+              <div>
+                <h3 className="text-base font-semibold">Business Analyst Co-op</h3>
+                <p className="text-sm text-text-muted italic">Teck Resources Ltd. - Digital Risk Practice & Resilience</p>
+              </div>
+              <time className="text-xs font-mono text-text-muted whitespace-nowrap">May – Aug 2025</time>
+            </div>
+            <ul className="space-y-2 text-sm leading-relaxed">
+              <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                Improved employee phishing report rate by ~20% across 10K+ employees through segmentation insights, send-time analysis, and A/B testing
+              </li>
+              <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                Prepared quarterly board reports for VP, CFO, and Board governance cycles - compiled training, phishing, and compliance KPIs from LMS/phishing/SharePoint tools
+              </li>
+              <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                Co-planned and executed phishing simulations for 10K+ employees - audiences, templates, QA, launch windows - aligned to KPI targets
+              </li>
+              <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                Joined datasets across LMS, phishing, rosters, and finance using Excel, Power Query, and SQL - produced KPI roll-ups and MoM variance analyses
               </li>
             </ul>
           </article>
@@ -113,7 +138,7 @@ export default function ResumePage() {
             <p className="text-xs text-text-muted font-mono mb-2">Python, XGBoost, MLflow, FastAPI, Docker, GitHub Actions, Evidently</p>
             <ul className="space-y-2 text-sm leading-relaxed">
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                Framed the problem, defined success metrics (AUPRC, F2 threshold, drift triggers), and evaluated model tradeoffs — achieved 0.874 AUPRC (21% above baseline) on 590K+ transactions
+                Framed the problem, defined success metrics (AUPRC, F2 threshold, drift triggers), and evaluated model tradeoffs - achieved 0.874 AUPRC (21% above baseline) on 590K+ transactions
               </li>
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
                 Decoupled model updates from API code via MLflow alias-based champion promotion; containerized inference with Docker, automated CI/CD via GitHub Actions, and monitored production drift with Evidently
@@ -129,7 +154,7 @@ export default function ResumePage() {
             <p className="text-xs text-text-muted font-mono mb-2">Python, pandas, Prophet, ARIMA, statsmodels, matplotlib</p>
             <ul className="space-y-2 text-sm leading-relaxed">
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                Scoped and built a revenue accrual forecasting engine for Finance — benchmarked ARIMA, Prophet, and Exponential Smoothing across 5 DSPs, 10 territories, 4 BUs
+                Scoped and built a revenue accrual forecasting engine for Finance - benchmarked ARIMA, Prophet, and Exponential Smoothing across 5 DSPs, 10 territories, 4 BUs
               </li>
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
                 Eliminated forecast bias by detecting structural regime changes via CoV analysis; delivered Finance-ready output with conservative/aggressive scenarios and 3 strategic insights
@@ -139,13 +164,13 @@ export default function ResumePage() {
 
           <article>
             <div className="flex flex-col sm:flex-row sm:justify-between gap-1 mb-2">
-              <h3 className="text-base font-semibold">Prescripto — AI Healthcare Transcription</h3>
+              <h3 className="text-base font-semibold">Prescripto - AI Healthcare Transcription</h3>
               <time className="text-xs font-mono text-text-muted whitespace-nowrap">Mar 2025</time>
             </div>
             <p className="text-xs text-text-muted font-mono mb-2">Python, Whisper API, Gemini 2.0 Flash, Claude API</p>
             <ul className="space-y-2 text-sm leading-relaxed">
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                Defined the product problem, scoped AI-assisted solution, and shipped a speech-to-summary pipeline supporting 50+ languages — reducing SOAP note time 35%
+                Defined the product problem, scoped AI-assisted solution, and shipped a speech-to-summary pipeline supporting 50+ languages - reducing SOAP note time 35%
               </li>
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
                 Cut critical medical hallucinations 40% by implementing a dual validation layer combining regex and Claude-3 semantic checks against ICD-11 codes
