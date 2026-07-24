@@ -36,6 +36,101 @@
   --font-mono: var(--font-mono);
 }
 
+/* ── Flashlight toggle animation ── */
+@keyframes flashlight-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes flashlight-slide-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+}
+@keyframes beam-on {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  55% {
+    opacity: 1;
+    transform: scaleX(1.05);
+  }
+  70% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+@keyframes beam-off {
+  from {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  to {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+}
+@keyframes glow-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.16;
+  }
+}
+@keyframes glow-out {
+  from {
+    opacity: 0.16;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.beam-glow,
+.beam-rays {
+  transform-box: fill-box;
+  transform-origin: left center;
+}
+.beam-glow {
+  filter: blur(6px);
+  opacity: 0;
+}
+
+.flashlight-panel[data-dir="tolight"] .flashlight-body {
+  animation: flashlight-slide-in 0.45s ease-out both;
+}
+.flashlight-panel[data-dir="tolight"] .beam-rays {
+  animation: beam-on 0.5s ease-out 0.3s both;
+}
+.flashlight-panel[data-dir="tolight"] .beam-glow {
+  animation: glow-in 0.45s ease-out 0.32s both;
+}
+
+.flashlight-panel[data-dir="todark"] .flashlight-body {
+  animation: flashlight-slide-out 0.5s ease-in 0.2s both;
+}
+.flashlight-panel[data-dir="todark"] .beam-rays {
+  animation: beam-off 0.3s ease-in both;
+}
+.flashlight-panel[data-dir="todark"] .beam-glow {
+  animation: glow-out 0.3s ease-in both;
+}
+
 /* ── Base ── */
 html {
   scroll-behavior: smooth;
