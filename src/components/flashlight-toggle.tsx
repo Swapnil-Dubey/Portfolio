@@ -54,7 +54,8 @@ export function FlashlightToggle() {
         aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
         className="rounded-md p-1.5 text-text-muted transition-colors hover:text-text"
       >
-        {/* Static flashlight — beam shown when the light is on (light mode) */}
+        {/* Static flashlight — hidden while the pop-out animation plays so
+            there aren't two flashlights on screen at once. */}
         <svg
           width="18"
           height="18"
@@ -65,16 +66,19 @@ export function FlashlightToggle() {
           strokeLinecap="round"
           strokeLinejoin="round"
           aria-hidden="true"
+          className={playing ? "opacity-0" : ""}
         >
-          <rect x="3" y="9" width="8" height="6" rx="1.5" />
-          <path d="M11 8.5 L15 6.5 L15 17.5 L11 15.5 Z" />
-          {beamOn && (
-            <g className="text-accent">
-              <path d="M16 7 L20 4.5" />
-              <path d="M16 12 L21 12" />
-              <path d="M16 17 L20 19.5" />
-            </g>
-          )}
+          <g transform="translate(11 13) rotate(135)">
+            <rect x="-13" y="-3" width="9" height="6" rx="1.5" />
+            <path d="M-4 -3 L0 -4.5 L0 4.5 L-4 3 Z" />
+            {beamOn && (
+              <g className="text-accent">
+                <path d="M1.5 -2.5 L5 -4.5" />
+                <path d="M1.5 0 L6 0" />
+                <path d="M1.5 2.5 L5 4.5" />
+              </g>
+            )}
+          </g>
         </svg>
       </button>
 
