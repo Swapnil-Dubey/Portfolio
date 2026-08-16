@@ -4,7 +4,7 @@ import { TableOfContents } from "@/components/table-of-contents";
 export const metadata: Metadata = {
   title: "The UBC Arrival Guide - Case Study",
   description:
-    "A CPSC 344 team case study on a weekly newsletter paired with an interactive task tracker for newly arrived international students at UBC - need-finding, a shipped prototype, a ten-session usability study, and a critique of my own study design.",
+    "A team case study on a weekly newsletter paired with an interactive task tracker for newly arrived international students at UBC - need-finding, a shipped prototype, a ten-session usability study, and a critique of my own study design.",
 };
 
 const needFindingStats = [
@@ -30,7 +30,7 @@ const requirements = [
   {
     id: "R1",
     name: "Task Self-Sufficiency",
-    type: "Design constraint (functional)",
+    type: "Design goal (usability)",
     statement:
       "A user must be able to complete a single arrival task from one consolidated set of steps without switching to a separate, unconnected source.",
     pass: "Binary heuristic: the task is completable from a single consolidated location, or it is not. Evaluated as the proportion of users who finish a target task without consulting an outside source.",
@@ -174,11 +174,10 @@ const researchQuestions = [
 
 const findingStats = [
   { figure: "4.5 / 5", label: "Confidence acting on the information, up from the 3.4/5 baseline" },
-  { figure: "3 / 5", label: "“Before acting on this I would want to check elsewhere”" },
+  { figure: "3.1 / 5", label: "“Before acting on this I would want to check elsewhere”" },
   { figure: "3.6 / 5", label: "Self-sufficiency - the lowest score in the study" },
   { figure: "3.9 / 5", label: "Prioritization - the second lowest" },
   { figure: "4 of 10", label: "Could not reach the tracker from the newsletter without a nudge" },
-  { figure: "4 of 10", label: "Identified the most urgent task unprompted" },
 ];
 
 const recommendations = [
@@ -244,8 +243,8 @@ export default function UBCArrivalGuidePage() {
           international students in their first weeks at UBC.
         </p>
         <p className="mt-4 text-xs font-mono text-text-muted">
-          CPSC 344 (HCI Methods), UBC&ensp;·&ensp;Five-person team, group
-          C-G2&ensp;·&ensp;May &ndash; Aug 2026&ensp;·&ensp;15 min read
+          Five-person team&ensp;·&ensp;UBC HCI methods course&ensp;·&ensp;May
+          &ndash; Aug 2026&ensp;·&ensp;15 min read
         </p>
       </header>
 
@@ -380,74 +379,43 @@ export default function UBCArrivalGuidePage() {
               My role
             </h2>
             <p className="text-sm text-text-muted mb-8 leading-relaxed">
-              This was a five-person team project. Everything on this page was
-              produced by group C-G2; the split below is what I owned versus what
-              the team owned.
+              Five of us built this, and we worked across each other&rsquo;s
+              sections the whole way - so almost nothing here was done
+              alone. What I led:
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="rounded-lg border-2 border-accent/50 bg-accent/5 p-5">
-                <p className="text-xs font-mono text-accent mb-3 uppercase tracking-wide">
-                  Mine
-                </p>
-                <ul className="space-y-2 text-sm leading-relaxed">
-                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    <strong>Project manager</strong> for the group per the group
-                    contract - agendas, deadline tracking, escalation.
-                  </li>
-                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    <strong>Milestone 2:</strong> qualitative analysis, the
-                    design requirements and metrics section, interviews.
-                  </li>
-                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    <strong>Milestone 3:</strong> authored Design Approach 1, the
-                    Interactive Task Tracker.
-                  </li>
-                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    <strong>Checkpoint A:</strong> design requirements section;
-                    co-owned the tracker wireframes and the tracker code.
-                  </li>
-                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    <strong>Checkpoint B:</strong> wrote the three evaluation
-                    research questions.
-                  </li>
-                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    <strong>Build:</strong> tracker interactions, peer quotes
-                    into task cards, and pilot fixes (with Ayush).
-                  </li>
-                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    <strong>Milestone 4:</strong> Recommendations and Process
-                    Critique.
-                  </li>
-                </ul>
-              </div>
-
-              <div className="rounded-lg border border-border p-5">
-                <p className="text-xs font-mono text-text-muted mb-3 uppercase tracking-wide">
-                  The team&rsquo;s
-                </p>
-                <ul className="space-y-2 text-sm leading-relaxed">
-                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    Running the need-finding study - protocol, script,
-                    coding sheets, questionnaire.
-                  </li>
-                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    The affinity diagram and every visualization in both reports.
-                  </li>
-                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    Newsletter design, layout, and content writing.
-                  </li>
-                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    Ethics documentation, consent forms, and study materials.
-                  </li>
-                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    Evaluation sessions - ten in total, split two per team
-                    member - plus the pilot studies and the analysis
-                    section.
-                  </li>
-                </ul>
-              </div>
+            <div className="rounded-lg border-2 border-accent/50 bg-accent/5 p-5">
+              <ul className="space-y-2 text-sm leading-relaxed">
+                <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                  <strong>Project management</strong> - agendas, deadline
+                  tracking, and escalation, per our group contract.
+                </li>
+                <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                  <strong>The design requirements and their metrics</strong>,
+                  plus the qualitative analysis they came out of.
+                </li>
+                <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                  <strong>The task tracker</strong> - the original concept,
+                  and a share of the wireframes, the interactions, and the code.
+                </li>
+                <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                  <strong>The three research questions</strong> the usability
+                  study was built on - and the critique of them at the end of
+                  this page.
+                </li>
+                <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                  <strong>The recommendations</strong> coming out of the study.
+                </li>
+              </ul>
             </div>
+
+            <p className="mt-4 text-sm text-text-muted leading-relaxed">
+              The rest doesn&rsquo;t split cleanly. We all interviewed, coded,
+              wrote, and reviewed each other&rsquo;s work - I ran interviews
+              in the need-finding study and two of the ten usability sessions,
+              like everyone else did. The newsletter and the visualizations were
+              the pieces I had the least hand in.
+            </p>
           </section>
 
           {/* ── Need-finding ── */}
@@ -456,9 +424,9 @@ export default function UBCArrivalGuidePage() {
               Need-finding study
             </h2>
             <p className="text-sm text-text-muted mb-8 leading-relaxed">
-              Ten participants: seven UBC international students, one domestic
-              student, and two international TAs, all of whom had been through
-              the transition themselves. Two methods - think-aloud
+              Ten participants: seven UBC international students and two
+              international TAs - all of whom had been through the
+              transition - and one domestic student. Two methods - think-aloud
               observation with a semi-structured interview while participants
               navigated existing UBC resources, and a questionnaire for broader
               quantitative comparison.
@@ -573,10 +541,19 @@ export default function UBCArrivalGuidePage() {
 
             <div className="mt-8 space-y-4 text-sm leading-relaxed">
               <p>
-                Two of these deserve their reasoning stated. R4 was designated a{" "}
+                Three of these deserve their reasoning stated. R1 started life
+                as a functional constraint and was{" "}
+                <strong>reclassified as a goal</strong> when feedback pointed
+                out that centralizing information is a usability outcome, not a
+                capability the system either has or doesn&rsquo;t - which is
+                also when it was renamed Task Self-Sufficiency. That left
+                exactly one constraint on the list.
+              </p>
+              <p>
+                That one is R4, designated a{" "}
                 <strong>binary constraint rather than a graded goal</strong>{" "}
-                after a TA flagged that it wasn&rsquo;t clear which requirement
-                was the constraint. Privacy doesn&rsquo;t average - a design
+                after review feedback that it wasn&rsquo;t clear which
+                requirement was the constraint. Privacy doesn&rsquo;t average - a design
                 that exposes a student some of the time has failed, so R4 is
                 pass/fail and verified at both entry points.
               </p>
@@ -588,10 +565,10 @@ export default function UBCArrivalGuidePage() {
                 being a finding and became the bar the design had to clear.
               </p>
               <p>
-                At Checkpoint B we made R1 and R2 the primary evaluation targets,
-                on TA feedback that the prototype realistically would not satisfy
-                all four requirements completely - so we picked the two the
-                MVP most depended on rather than spreading the study thin.
+                We also made R1 and R2 the primary evaluation targets. The
+                prototype was not realistically going to satisfy all four
+                requirements completely, so we picked the two the design most
+                depended on rather than spreading the study thin.
               </p>
             </div>
           </section>
@@ -602,7 +579,7 @@ export default function UBCArrivalGuidePage() {
               Three design approaches, and why we merged two
             </h2>
             <p className="text-sm text-text-muted mb-8 leading-relaxed">
-              We took three approaches into the Shark Tank presentation. I
+              We developed three approaches and pitched them for critique. I
               authored the first.
             </p>
 
@@ -658,7 +635,7 @@ export default function UBCArrivalGuidePage() {
                   prioritizes but can&rsquo;t be searched or personalized, and
                   the tracker answers anything on demand but overwhelms a
                   jet-lagged student on day one. Neither hit all four
-                  requirements alone, and the Shark Tank feedback said the same.
+                  requirements alone, and the critique we got said the same.
                   So DA1 and DA2 became one two-component system rather than two
                   candidates.
                 </p>
@@ -672,8 +649,8 @@ export default function UBCArrivalGuidePage() {
                 </p>
                 <p className="text-text-muted">
                   DA3 was dropped. It doesn&rsquo;t scale, has no catch-up path
-                  for a missed session, and - as the Shark Tank pointed out
-                  - had no computing component to build.
+                  for a missed session, and had no software component to
+                  build.
                 </p>
               </div>
             </div>
@@ -753,13 +730,13 @@ export default function UBCArrivalGuidePage() {
               <p>
                 <strong>Out of scope, stated as such:</strong> real email
                 delivery, ongoing content maintenance, and real peer content -
-                which is exactly why the report carries a long-term accuracy
+                which is exactly why we recorded a long-term accuracy
                 limitation rather than a claim we couldn&rsquo;t support.
               </p>
               <p>
                 <strong>Why polish was restricted.</strong> Our early tracker
                 sketches were close to high fidelity because they were
-                AI-generated. A TA flagged that AI-driven polish adds
+                AI-generated. Review feedback flagged that AI-driven polish adds
                 &ldquo;secondary persuasion&rdquo; and undercuts confidence in
                 intentional design choices - a participant reacting to a
                 slick surface isn&rsquo;t telling you whether your ordering or
@@ -831,11 +808,11 @@ export default function UBCArrivalGuidePage() {
                 debrief captured confidence, trust, and felt exposure, which
                 observation cannot reach. R1 and R2 are behavioural, so we
                 watched task performance. R3 is subjective, so it was rated and
-                compared against the M2 baseline. R4 is pass/fail, so it was
+                compared against the need-finding baseline. R4 is pass/fail, so it was
                 verified at both entry points.
               </p>
               <p>
-                Two things changed from the Checkpoint B plan. The newsletter
+                Two things changed from the original plan. The newsletter
                 became an on-screen email rather than a printed handout, because
                 the handoff is part of RQ1 and the link had to be clickable -
                 and email is the final design&rsquo;s channel anyway. And we
@@ -877,7 +854,7 @@ export default function UBCArrivalGuidePage() {
                   Confidence acting on the information averaged 4.5/5, well above
                   the 3.4/5 baseline the requirement was written against. But
                   &ldquo;before acting on this I would want to check
-                  elsewhere&rdquo; still averaged 3/5. UBC branding, official
+                  elsewhere&rdquo; still averaged 3.1/5. UBC branding, official
                   links, and the peer-verified notes were what participants named
                   as making the steps feel accurate; internal inconsistencies and
                   the suspicion that text was AI-generated were what pulled
@@ -898,12 +875,16 @@ export default function UBCArrivalGuidePage() {
                 <p className="text-sm text-text-muted leading-relaxed">
                   Self-sufficiency (3.6) and prioritization (3.9) were the lowest
                   scores in the study - the two requirements we had made
-                  primary. Four of ten participants could not navigate from the
-                  newsletter to the tracker without a nudge, because the link sat
-                  at the bottom of the email under all the tasks. Four of ten
-                  identified the most urgent task unprompted. Participants who
-                  found the steps too thin to act on left the design to search
-                  elsewhere, which is exactly what R1 was written to prevent.
+                  primary. Two different four-of-ten counts sit underneath those
+                  scores, measuring two different failures. Four
+                  participants could not navigate from the newsletter to the
+                  tracker without a nudge, because the link sat at the bottom of
+                  the email under all the tasks - that is the handoff. And
+                  only four identified the most urgent task unprompted once they
+                  were in front of the content - that is the ordering. On top
+                  of both, participants who found the steps too thin to act on
+                  left the design to search elsewhere, which is exactly what R1
+                  was written to prevent.
                 </p>
                 <p className="mt-2 text-xs font-mono text-text-muted">
                   (RQ1 - confidence in the claim: medium, limited by
@@ -951,8 +932,8 @@ export default function UBCArrivalGuidePage() {
               Recommendations
             </h2>
             <p className="text-sm text-text-muted mb-8 leading-relaxed">
-              I wrote this section and the one that follows for the final report.
-              Each recommendation names the failure rate it is answering.
+              I wrote the recommendations and the critique that follows. Each
+              one names the failure rate it is answering.
             </p>
 
             <div className="space-y-4">
@@ -1022,8 +1003,8 @@ export default function UBCArrivalGuidePage() {
                 One decision worth recording on the other side. Treating the
                 newsletter and tracker as two parts of one process, rather than
                 picking one, was the best call we made. And keeping most of the
-                interface rough after the TA&rsquo;s feedback mattered more than
-                we expected: because so little was polished, the AI-written text
+                interface rough after that feedback mattered more than we
+                expected: because so little was polished, the AI-written text
                 stood out to participants as a trust problem instead of blending
                 in. That is a finding we would have missed entirely if we had
                 polished everything - it surfaced because of a scoping

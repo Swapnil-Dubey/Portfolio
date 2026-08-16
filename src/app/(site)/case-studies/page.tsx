@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Case Studies",
   description:
-    "Product case studies - a self-directed course planning tool, and a CPSC 344 team project that shipped a prototype and ran a usability study.",
+    "Product case studies - a self-directed course planning tool, and a team project that shipped a prototype and ran a usability study.",
 };
 
 const caseStudies = [
@@ -24,7 +24,7 @@ const caseStudies = [
       "Arrival information isn’t missing - it’s scattered, and asking publicly feels exposing.",
     summary:
       "A weekly newsletter email paired with an interactive task tracker for newly arrived international students. Five-person team, real participants, a deployed prototype, a ten-session usability study - and a critique of my own study design.",
-    meta: "CPSC 344 team project · 15 min read · May – Aug 2026",
+    meta: "Five-person team project · 15 min read · May – Aug 2026",
   },
 ];
 

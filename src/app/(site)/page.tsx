@@ -214,7 +214,7 @@ export default function Home() {
               scattered, and asking publicly feels exposing.&rdquo;
             </blockquote>
             <p className="text-text-muted text-xs font-mono">
-              CPSC 344 team project, shipped prototype &amp; usability
+              Team project, shipped prototype &amp; usability
               study&ensp;·&ensp;15 min read&ensp;·&ensp;May &ndash; Aug 2026
             </p>
           </Link>
