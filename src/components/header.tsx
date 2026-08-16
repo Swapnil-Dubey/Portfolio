@@ -7,7 +7,7 @@ import { FlashlightToggle } from "./flashlight-toggle";
 
 const navLinks = [
   { href: "/#work", label: "Work" },
-  { href: "/case-studies/academic-os", label: "Case Studies" },
+  { href: "/case-studies", label: "Case Studies" },
   { href: "/projects", label: "Projects" },
   { href: "/writing", label: "Writing" },
   { href: "/resume", label: "Resume" },

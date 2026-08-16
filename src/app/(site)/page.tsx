@@ -184,22 +184,41 @@ export default function Home() {
           Case Studies
         </h2>
 
-        <Link
-          href="/case-studies/academic-os"
-          className="group block rounded-lg border border-border p-6 md:p-8 no-underline hover:border-accent/40 transition-colors"
-        >
-          <h3 className="text-lg font-display font-normal mb-3 text-text group-hover:text-accent transition-colors">
-            Academic OS
-          </h3>
-          <blockquote className="text-text-muted italic text-sm leading-relaxed border-l-2 border-accent/40 pl-4 mb-4">
-            &ldquo;Students don&rsquo;t lack sources - they lack a single
-            synthesized judgment they can trust.&rdquo;
-          </blockquote>
-          <p className="text-text-muted text-xs font-mono">
-            Self-directed PM case study&ensp;·&ensp;12 min read&ensp;·&ensp;July
-            2026
-          </p>
-        </Link>
+        <div className="space-y-4">
+          <Link
+            href="/case-studies/academic-os"
+            className="group block rounded-lg border border-border p-6 md:p-8 no-underline hover:border-accent/40 transition-colors"
+          >
+            <h3 className="text-lg font-display font-normal mb-3 text-text group-hover:text-accent transition-colors">
+              Academic OS
+            </h3>
+            <blockquote className="text-text-muted italic text-sm leading-relaxed border-l-2 border-accent/40 pl-4 mb-4">
+              &ldquo;Students don&rsquo;t lack sources - they lack a single
+              synthesized judgment they can trust.&rdquo;
+            </blockquote>
+            <p className="text-text-muted text-xs font-mono">
+              Self-directed PM case study&ensp;·&ensp;12 min
+              read&ensp;·&ensp;July 2026
+            </p>
+          </Link>
+
+          <Link
+            href="/case-studies/ubc-arrival-guide"
+            className="group block rounded-lg border border-border p-6 md:p-8 no-underline hover:border-accent/40 transition-colors"
+          >
+            <h3 className="text-lg font-display font-normal mb-3 text-text group-hover:text-accent transition-colors">
+              The UBC Arrival Guide
+            </h3>
+            <blockquote className="text-text-muted italic text-sm leading-relaxed border-l-2 border-accent/40 pl-4 mb-4">
+              &ldquo;Arrival information isn&rsquo;t missing - it&rsquo;s
+              scattered, and asking publicly feels exposing.&rdquo;
+            </blockquote>
+            <p className="text-text-muted text-xs font-mono">
+              CPSC 344 team project, shipped prototype &amp; usability
+              study&ensp;·&ensp;15 min read&ensp;·&ensp;May &ndash; Aug 2026
+            </p>
+          </Link>
+        </div>
       </section>
 
       <hr className="my-16 border-border" />

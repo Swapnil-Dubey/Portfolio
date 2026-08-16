@@ -39,6 +39,8 @@ To feature a project on the homepage, add it to the `selectedProjects` array in 
 1. Create a new directory: `src/app/(site)/case-studies/[slug]/page.tsx`
 2. Follow the structure in `src/app/(site)/case-studies/academic-os/page.tsx`
 3. Add a card for it in the Case Studies section of `src/app/(site)/page.tsx`
+4. Add an entry to the `caseStudies` array in `src/app/(site)/case-studies/page.tsx` (the index page linked from the nav)
+5. Add the URL to `public/sitemap.xml`
 
 ### Update the resume
 
