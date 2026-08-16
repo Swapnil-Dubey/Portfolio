@@ -8,16 +8,16 @@ export const metadata: Metadata = {
 };
 
 const researchData = [
-  { person: "Student 1", year: "4th year", program: "Computer Science", date: "Jul 10", pain: "Can\u2019t tell if a course satisfies a specific requirement bucket without manually cross-checking the calendar" },
-  { person: "Student 2", year: "3rd year", program: "Statistics (CS Concentration)", date: "Jul 10", pain: "Worried about missing a graduation requirement discovered too late" },
-  { person: "Student 3", year: "2nd year", program: "Computer Science", date: "Jul 10", pain: "Registers for a schedule that looks fine on paper but is unsustainable in practice" },
-  { person: "Student 4", year: "3rd year", program: "Data Science Minor", date: "Jul 10", pain: "No way to gauge weekly time commitment before the term starts" },
-  { person: "Student 5", year: "1st year", program: "Computer Science", date: "Jul 10", pain: "Can\u2019t distinguish a well-taught course from a rough one before enrolling" },
-  { person: "Student 6", year: "4th year", program: "Statistics (CS Concentration)", date: "Jul 11", pain: "Reviews exist but are scattered and inconsistent in how they rate difficulty" },
-  { person: "Student 7", year: "2nd year", program: "Computer Science", date: "Jul 11", pain: "Has to manually combine requirement info, workload rumors, and quality reviews from separate places every term" },
-  { person: "Student 8", year: "3rd year", program: "Computer Science", date: "Jul 11", pain: "Mental fatigue from re-verifying the same plan every registration cycle" },
-  { person: "Student 9", year: "2nd year", program: "Psychology + CS Minor", date: "Jul 11", pain: "Optimizing for degree progress accidentally overloads a term" },
-  { person: "Student 10", year: "4th year", program: "Computer Science", date: "Jul 11", pain: "Wants one synthesized recommendation instead of raw data to interpret themselves" },
+  { person: "Student 1", year: "4th year", program: "Computer Science", pain: "Can\u2019t tell if a course satisfies a specific requirement bucket without manually cross-checking the calendar" },
+  { person: "Student 2", year: "3rd year", program: "Statistics (CS Concentration)", pain: "Worried about missing a graduation requirement discovered too late" },
+  { person: "Student 3", year: "2nd year", program: "Computer Science", pain: "Registers for a schedule that looks fine on paper but is unsustainable in practice" },
+  { person: "Student 4", year: "3rd year", program: "Data Science Minor", pain: "No way to gauge weekly time commitment before the term starts" },
+  { person: "Student 5", year: "1st year", program: "Computer Science", pain: "Can\u2019t distinguish a well-taught course from a rough one before enrolling" },
+  { person: "Student 6", year: "4th year", program: "Statistics (CS Concentration)", pain: "Reviews exist but are scattered and inconsistent in how they rate difficulty" },
+  { person: "Student 7", year: "2nd year", program: "Computer Science", pain: "Has to manually combine requirement info, workload rumors, and quality reviews from separate places every term" },
+  { person: "Student 8", year: "3rd year", program: "Computer Science", pain: "Mental fatigue from re-verifying the same plan every registration cycle" },
+  { person: "Student 9", year: "2nd year", program: "Psychology + CS Minor", pain: "Optimizing for degree progress accidentally overloads a term" },
+  { person: "Student 10", year: "4th year", program: "Computer Science", pain: "Wants one synthesized recommendation instead of raw data to interpret themselves" },
 ];
 
 const insights = [
@@ -45,12 +45,13 @@ const insights = [
 
 const tocItems = [
   { id: "problem-framing", label: "Problem framing" },
-  { id: "user-research", label: "User research" },
+  { id: "research-inputs", label: "Constructed research inputs" },
   { id: "key-insights", label: "Key insights" },
   { id: "core-problem", label: "Core problem" },
   { id: "okrs", label: "Objective & key results" },
   { id: "solution", label: "Solution & scope" },
   { id: "design-decisions", label: "Design decision log" },
+  { id: "method-limits", label: "What this method can’t do" },
 ];
 
 export default function AcademicOSPage() {
@@ -149,11 +150,17 @@ export default function AcademicOSPage() {
             </div>
           </section>
 
-          {/* ── User Research ── */}
-          <section id="user-research" className="mb-16 scroll-mt-24">
-            <h2 className="mb-8 text-text-muted text-xs font-mono uppercase tracking-widest">
-              User research
+          {/* ── Constructed research inputs ── */}
+          <section id="research-inputs" className="mb-16 scroll-mt-24">
+            <h2 className="mb-4 text-text-muted text-xs font-mono uppercase tracking-widest">
+              Constructed research inputs
             </h2>
+            <p className="mb-8 text-sm text-text-muted leading-relaxed">
+              To repeat the note above, because this table is where it matters:
+              these ten entries are constructed personas I wrote, not interviews
+              with real students. They are the input to the synthesis below, not
+              evidence of anything.
+            </p>
 
             {/* Desktop table */}
             <div className="hidden md:block overflow-x-auto">
@@ -168,9 +175,6 @@ export default function AcademicOSPage() {
                     </th>
                     <th className="py-3 pr-4 font-semibold text-xs uppercase tracking-wide text-text-muted">
                       Program
-                    </th>
-                    <th className="py-3 pr-4 font-semibold text-xs uppercase tracking-wide text-text-muted">
-                      Date
                     </th>
                     <th className="py-3 font-semibold text-xs uppercase tracking-wide text-text-muted">
                       Pain points
@@ -189,9 +193,6 @@ export default function AcademicOSPage() {
                       <td className="py-3 pr-4 text-text-muted">
                         {s.program}
                       </td>
-                      <td className="py-3 pr-4 font-mono text-xs text-text-muted whitespace-nowrap">
-                        {s.date}
-                      </td>
                       <td className="py-3 leading-relaxed">{s.pain}</td>
                     </tr>
                   ))}
@@ -206,14 +207,9 @@ export default function AcademicOSPage() {
                   key={s.person}
                   className="rounded-lg border border-border p-4"
                 >
-                  <div className="flex items-baseline justify-between mb-2">
-                    <span className="font-mono text-xs font-semibold">
-                      {s.person}
-                    </span>
-                    <span className="font-mono text-xs text-text-muted">
-                      {s.date}
-                    </span>
-                  </div>
+                  <p className="font-mono text-xs font-semibold mb-2">
+                    {s.person}
+                  </p>
                   <p className="text-xs text-text-muted mb-2">
                     {s.year} · {s.program}
                   </p>
@@ -286,7 +282,11 @@ export default function AcademicOSPage() {
                 {[
                   {
                     id: "KR1",
-                    text: "% of synthesized requirement and quality statements that match source-of-truth documents when audited \u2014 assessed via two criteria: (a) requirement statements checked for deterministic correctness against Academic Calendar/Workday rules, (b) quality statements checked for faithfulness to what UBCGrades/RateMyProf sources actually say, not for objective truth.",
+                    text: "% of synthesized requirement and quality statements that match source-of-truth documents when audited. The two halves are audited against different standards, because they are different kinds of claim:",
+                    criteria: [
+                      "Requirement statements are checked for deterministic correctness against Academic Calendar and Workday rules \u2014 a course either satisfies a bucket or it doesn\u2019t.",
+                      "Quality statements are checked for faithfulness to what UBCGrades and RateMyProf actually say, not for objective truth \u2014 the product is accountable for representing a source correctly, not for the source being right.",
+                    ],
                   },
                   {
                     id: "KR2",
@@ -294,7 +294,7 @@ export default function AcademicOSPage() {
                   },
                   {
                     id: "KR3",
-                    text: "Predictive accuracy of workload estimates \u2014 % of courses where estimated weekly hours (self-reported by prior students) falls within [X hours] of a subsequent student\u2019s actual reported hours, validated and refined via an ongoing feedback loop rather than a fixed launch-day number.",
+                    text: "Predictive accuracy of workload estimates \u2014 % of courses where estimated weekly hours (self-reported by prior students) falls within a set tolerance of a subsequent student\u2019s actual reported hours. The tolerance is deliberately unset: with no workload data collected yet, any number now would be invented rather than derived, so it gets fixed once there is a baseline to fix it against.",
                     phase2: true,
                   },
                   {
@@ -308,12 +308,29 @@ export default function AcademicOSPage() {
                         {kr.id}
                       </span>
                       {kr.phase2 && (
-                        <span className="ml-1.5 inline-block rounded bg-text-muted/20 px-1.5 py-0.5 text-[10px] font-mono uppercase text-text-muted">
-                          Phase 2
-                        </span>
+                        <>
+                          {" "}
+                          <span className="inline-block rounded bg-text-muted/20 px-1.5 py-0.5 text-[10px] font-mono uppercase text-text-muted">
+                            Phase 2
+                          </span>
+                        </>
                       )}
                     </div>
-                    <p className="text-sm leading-relaxed">{kr.text}</p>
+                    <div>
+                      <p className="text-sm leading-relaxed">{kr.text}</p>
+                      {kr.criteria && (
+                        <ul className="mt-2 space-y-2 text-sm leading-relaxed text-text-muted">
+                          {kr.criteria.map((c, i) => (
+                            <li
+                              key={i}
+                              className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted"
+                            >
+                              {c}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -476,6 +493,14 @@ export default function AcademicOSPage() {
                     Insights 1 & 3 map cleanly to existing structured sources;
                     career-goal mapping does not.
                   </p>
+                  <p className="text-sm leading-relaxed mt-3">
+                    There is a second reason, and it is the stronger one: the
+                    frequency isn&rsquo;t real. Those ten entries are personas I
+                    wrote, so &ldquo;3 of 10&rdquo; counts how often I raised a
+                    theme, not how often students do. It can show that a theme
+                    is worth reasoning about. It cannot carry weight in a
+                    prioritization argument.
+                  </p>
                 </div>
 
                 <div className="px-5 py-4">
@@ -530,6 +555,39 @@ export default function AcademicOSPage() {
                   </p>
                 </div>
               </div>
+            </div>
+          </section>
+
+          {/* ── What this method can't do ── */}
+          <section id="method-limits" className="mb-16 scroll-mt-24">
+            <h2 className="mb-8 text-text-muted text-xs font-mono uppercase tracking-widest">
+              What this method can&rsquo;t do
+            </h2>
+
+            <div className="space-y-4 text-sm leading-relaxed">
+              <p>
+                The obvious limit of a constructed case study is worth stating
+                plainly rather than leaving a reader to find it. I wrote the ten
+                personas and then derived four insights from them, which means
+                the insights were guaranteed to be there. Nothing in the table
+                could have contradicted the framing, because nothing in the
+                table came from outside my own head.
+              </p>
+              <p>
+                So this exercise can pressure-test reasoning - whether the
+                synthesis follows from its inputs, whether a scope cut holds
+                against a stated standard, whether a metric measures the thing
+                it claims to. It cannot falsify the framing. A real study can
+                come back and tell you the problem you picked isn&rsquo;t the
+                one people have. This one structurally cannot.
+              </p>
+              <p>
+                That is why the decision log refuses to claim anything about
+                trust in a tool&rsquo;s output, and why frequency counts from
+                the table carry no weight in the prioritization argument. The
+                parts of this page that would need real data to support are
+                marked as open rather than answered.
+              </p>
             </div>
           </section>
         </article>

@@ -101,9 +101,8 @@ export default function Home() {
         </p>
 
         <p className="mt-6 text-sm font-semibold text-accent">
-          Open to new grad Technical Product Manager, Product Manager, Product
-          Analyst, and Analytics Engineer roles starting mid-2027. Based in
-          Vancouver, BC - open to relocating within Canada.
+          Open to new grad Product, Data and Engineering roles starting
+          mid-2027. Based in Vancouver, BC - open to relocating within Canada.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">
