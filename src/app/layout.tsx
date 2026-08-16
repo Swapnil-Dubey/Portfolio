@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s - Swapnil Dubey",
   },
   description:
-    "Computer Science + Statistics @ UBC. Incoming Technical Product Manager Intern @ Electronic Arts. Open to new grad PM, TPM, and analytics roles starting mid-2027.",
+    "Computer Science + Statistics @ UBC. Incoming Technical Product Manager Intern @ Electronic Arts. Open to new grad Product, Data and Engineering roles starting mid-2027.",
   metadataBase: new URL("https://swapnildubey.com"),
   openGraph: {
     type: "website",

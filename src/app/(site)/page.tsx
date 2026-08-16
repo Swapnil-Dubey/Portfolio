@@ -101,9 +101,8 @@ export default function Home() {
         </p>
 
         <p className="mt-6 text-sm font-semibold text-accent">
-          Open to new grad Technical Product Manager, Product Manager, Product
-          Analyst, and Analytics Engineer roles starting mid-2027. Based in
-          Vancouver, BC - open to relocating within Canada.
+          Open to new grad Product, Data and Engineering roles starting
+          mid-2027. Based in Vancouver, BC - open to relocating within Canada.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">
@@ -214,7 +213,7 @@ export default function Home() {
               scattered, and asking publicly feels exposing.&rdquo;
             </blockquote>
             <p className="text-text-muted text-xs font-mono">
-              Team project, shipped prototype &amp; usability
+              CPSC 344 team project, shipped prototype &amp; usability
               study&ensp;·&ensp;15 min read&ensp;·&ensp;May &ndash; Aug 2026
             </p>
           </Link>
