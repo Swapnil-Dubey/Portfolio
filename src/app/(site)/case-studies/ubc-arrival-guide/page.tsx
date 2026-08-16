@@ -379,15 +379,18 @@ export default function UBCArrivalGuidePage() {
               My role
             </h2>
             <p className="text-sm text-text-muted mb-8 leading-relaxed">
-              This was a five-person team project. Everything on this page was
-              produced by group C-G2; the split below is what I owned versus what
-              the team owned.
+              This was a five-person team project, and it ran like one. We worked
+              across each other&rsquo;s sections through every milestone -
+              reviewing drafts, filling gaps, and picking up whatever was behind
+              - so very little below was done alone. The split records where
+              each piece was owned and driven, not a boundary anyone stayed
+              inside.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="rounded-lg border-2 border-accent/50 bg-accent/5 p-5">
                 <p className="text-xs font-mono text-accent mb-3 uppercase tracking-wide">
-                  Mine
+                  What I led
                 </p>
                 <ul className="space-y-2 text-sm leading-relaxed">
                   <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
@@ -427,7 +430,7 @@ export default function UBCArrivalGuidePage() {
 
               <div className="rounded-lg border border-border p-5">
                 <p className="text-xs font-mono text-text-muted mb-3 uppercase tracking-wide">
-                  The team&rsquo;s
+                  What teammates led
                 </p>
                 <ul className="space-y-2 text-sm leading-relaxed">
                   <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
