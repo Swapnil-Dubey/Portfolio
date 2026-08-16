@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="mx-auto max-w-[1080px] px-6 py-16 md:py-24">
+    <div className="mx-auto flex min-h-[calc(100vh-10rem)] max-w-[700px] flex-col items-center justify-center px-6 py-8 text-center">
       {/* ── Identity ── */}
       <section aria-labelledby="identity">
         <h1 id="identity" className="mb-3">
@@ -17,7 +17,7 @@ export default function Home() {
           mid-2027. Based in Vancouver, BC - open to relocating within Canada.
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+        <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
           <a href="mailto:sdubey14@student.ubc.ca">Email</a>
           <a
             href="https://linkedin.com/in/swapnildub/"
