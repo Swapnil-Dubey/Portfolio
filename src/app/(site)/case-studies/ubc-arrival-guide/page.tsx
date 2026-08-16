@@ -30,7 +30,7 @@ const requirements = [
   {
     id: "R1",
     name: "Task Self-Sufficiency",
-    type: "Design constraint (functional)",
+    type: "Design goal (usability)",
     statement:
       "A user must be able to complete a single arrival task from one consolidated set of steps without switching to a separate, unconnected source.",
     pass: "Binary heuristic: the task is completable from a single consolidated location, or it is not. Evaluated as the proportion of users who finish a target task without consulting an outside source.",
@@ -174,11 +174,10 @@ const researchQuestions = [
 
 const findingStats = [
   { figure: "4.5 / 5", label: "Confidence acting on the information, up from the 3.4/5 baseline" },
-  { figure: "3 / 5", label: "“Before acting on this I would want to check elsewhere”" },
+  { figure: "3.1 / 5", label: "“Before acting on this I would want to check elsewhere”" },
   { figure: "3.6 / 5", label: "Self-sufficiency - the lowest score in the study" },
   { figure: "3.9 / 5", label: "Prioritization - the second lowest" },
   { figure: "4 of 10", label: "Could not reach the tracker from the newsletter without a nudge" },
-  { figure: "4 of 10", label: "Identified the most urgent task unprompted" },
 ];
 
 const recommendations = [
@@ -416,6 +415,10 @@ export default function UBCArrivalGuidePage() {
                     into task cards, and pilot fixes (with Ayush).
                   </li>
                   <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                    <strong>Evaluation:</strong> ran two of the ten usability
+                    sessions.
+                  </li>
+                  <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
                     <strong>Milestone 4:</strong> Recommendations and Process
                     Critique.
                   </li>
@@ -441,9 +444,9 @@ export default function UBCArrivalGuidePage() {
                     Ethics documentation, consent forms, and study materials.
                   </li>
                   <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    Evaluation sessions - ten in total, split two per team
-                    member - plus the pilot studies and the analysis
-                    section.
+                    The remaining eight usability sessions - ten in total,
+                    two per team member - plus the pilot studies and the
+                    analysis section.
                   </li>
                 </ul>
               </div>
@@ -456,9 +459,9 @@ export default function UBCArrivalGuidePage() {
               Need-finding study
             </h2>
             <p className="text-sm text-text-muted mb-8 leading-relaxed">
-              Ten participants: seven UBC international students, one domestic
-              student, and two international TAs, all of whom had been through
-              the transition themselves. Two methods - think-aloud
+              Ten participants: seven UBC international students and two
+              international TAs - all of whom had been through the
+              transition - and one domestic student. Two methods - think-aloud
               observation with a semi-structured interview while participants
               navigated existing UBC resources, and a questionnaire for broader
               quantitative comparison.
@@ -573,7 +576,16 @@ export default function UBCArrivalGuidePage() {
 
             <div className="mt-8 space-y-4 text-sm leading-relaxed">
               <p>
-                Two of these deserve their reasoning stated. R4 was designated a{" "}
+                Three of these deserve their reasoning stated. R1 started life
+                as a functional constraint and was{" "}
+                <strong>reclassified as a goal</strong> when feedback pointed
+                out that centralizing information is a usability outcome, not a
+                capability the system either has or doesn&rsquo;t - which is
+                also when it was renamed Task Self-Sufficiency. That left
+                exactly one constraint on the list.
+              </p>
+              <p>
+                That one is R4, designated a{" "}
                 <strong>binary constraint rather than a graded goal</strong>{" "}
                 after a TA flagged that it wasn&rsquo;t clear which requirement
                 was the constraint. Privacy doesn&rsquo;t average - a design
@@ -877,7 +889,7 @@ export default function UBCArrivalGuidePage() {
                   Confidence acting on the information averaged 4.5/5, well above
                   the 3.4/5 baseline the requirement was written against. But
                   &ldquo;before acting on this I would want to check
-                  elsewhere&rdquo; still averaged 3/5. UBC branding, official
+                  elsewhere&rdquo; still averaged 3.1/5. UBC branding, official
                   links, and the peer-verified notes were what participants named
                   as making the steps feel accurate; internal inconsistencies and
                   the suspicion that text was AI-generated were what pulled
@@ -898,12 +910,16 @@ export default function UBCArrivalGuidePage() {
                 <p className="text-sm text-text-muted leading-relaxed">
                   Self-sufficiency (3.6) and prioritization (3.9) were the lowest
                   scores in the study - the two requirements we had made
-                  primary. Four of ten participants could not navigate from the
-                  newsletter to the tracker without a nudge, because the link sat
-                  at the bottom of the email under all the tasks. Four of ten
-                  identified the most urgent task unprompted. Participants who
-                  found the steps too thin to act on left the design to search
-                  elsewhere, which is exactly what R1 was written to prevent.
+                  primary. Two different four-of-ten counts sit underneath those
+                  scores, measuring two different failures. Four
+                  participants could not navigate from the newsletter to the
+                  tracker without a nudge, because the link sat at the bottom of
+                  the email under all the tasks - that is the handoff. And
+                  only four identified the most urgent task unprompted once they
+                  were in front of the content - that is the ordering. On top
+                  of both, participants who found the steps too thin to act on
+                  left the design to search elsewhere, which is exactly what R1
+                  was written to prevent.
                 </p>
                 <p className="mt-2 text-xs font-mono text-text-muted">
                   (RQ1 - confidence in the claim: medium, limited by
