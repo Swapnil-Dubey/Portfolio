@@ -4,7 +4,7 @@ import { TableOfContents } from "@/components/table-of-contents";
 export const metadata: Metadata = {
   title: "The UBC Arrival Guide - Case Study",
   description:
-    "A team case study on a weekly newsletter paired with an interactive task tracker for newly arrived international students at UBC - need-finding, a shipped prototype, a ten-session usability study, and a critique of my own study design.",
+    "A CPSC 344 team case study on a weekly newsletter paired with an interactive task tracker for newly arrived international students at UBC - need-finding, a shipped prototype, a ten-session usability study, and a critique of my own study design.",
 };
 
 const needFindingStats = [
@@ -243,8 +243,8 @@ export default function UBCArrivalGuidePage() {
           international students in their first weeks at UBC.
         </p>
         <p className="mt-4 text-xs font-mono text-text-muted">
-          Five-person team&ensp;·&ensp;UBC HCI methods course&ensp;·&ensp;May
-          &ndash; Aug 2026&ensp;·&ensp;15 min read
+          CPSC 344 (HCI Methods), UBC&ensp;·&ensp;Five-person
+          team&ensp;·&ensp;May &ndash; Aug 2026&ensp;·&ensp;15 min read
         </p>
       </header>
 
@@ -543,7 +543,8 @@ export default function UBCArrivalGuidePage() {
               <p>
                 Three of these deserve their reasoning stated. R1 started life
                 as a functional constraint and was{" "}
-                <strong>reclassified as a goal</strong> when feedback pointed
+                <strong>reclassified as a goal</strong>{" "}
+                when feedback pointed
                 out that centralizing information is a usability outcome, not a
                 capability the system either has or doesn&rsquo;t - which is
                 also when it was renamed Task Self-Sufficiency. That left
@@ -552,7 +553,7 @@ export default function UBCArrivalGuidePage() {
               <p>
                 That one is R4, designated a{" "}
                 <strong>binary constraint rather than a graded goal</strong>{" "}
-                after review feedback that it wasn&rsquo;t clear which
+                after our TA flagged that it wasn&rsquo;t clear which
                 requirement was the constraint. Privacy doesn&rsquo;t average - a design
                 that exposes a student some of the time has failed, so R4 is
                 pass/fail and verified at both entry points.
@@ -580,7 +581,7 @@ export default function UBCArrivalGuidePage() {
             </h2>
             <p className="text-sm text-text-muted mb-8 leading-relaxed">
               We developed three approaches and pitched them for critique. I
-              authored the first.
+              brought the first one.
             </p>
 
             <div className="space-y-4">
@@ -597,7 +598,7 @@ export default function UBCArrivalGuidePage() {
                       <h3 className="text-base font-semibold">{a.name}</h3>
                       {a.mine && (
                         <span className="inline-block rounded-full border border-accent/50 px-2.5 py-0.5 text-[10px] font-mono uppercase text-accent">
-                          Mine
+                          My concept
                         </span>
                       )}
                     </div>
@@ -635,7 +636,8 @@ export default function UBCArrivalGuidePage() {
                   prioritizes but can&rsquo;t be searched or personalized, and
                   the tracker answers anything on demand but overwhelms a
                   jet-lagged student on day one. Neither hit all four
-                  requirements alone, and the critique we got said the same.
+                  requirements alone, and the feedback from our pitch session
+                  said the same.
                   So DA1 and DA2 became one two-component system rather than two
                   candidates.
                 </p>
@@ -728,15 +730,17 @@ export default function UBCArrivalGuidePage() {
 
             <div className="mt-8 space-y-4 text-sm leading-relaxed">
               <p>
-                <strong>Out of scope, stated as such:</strong> real email
+                <strong>Out of scope, stated as such:</strong>{" "}
+                real email
                 delivery, ongoing content maintenance, and real peer content -
                 which is exactly why we recorded a long-term accuracy
                 limitation rather than a claim we couldn&rsquo;t support.
               </p>
               <p>
-                <strong>Why polish was restricted.</strong> Our early tracker
+                <strong>Why polish was restricted.</strong>{" "}
+                Our early tracker
                 sketches were close to high fidelity because they were
-                AI-generated. Review feedback flagged that AI-driven polish adds
+                AI-generated. Our TA flagged that AI-driven polish adds
                 &ldquo;secondary persuasion&rdquo; and undercuts confidence in
                 intentional design choices - a participant reacting to a
                 slick surface isn&rsquo;t telling you whether your ordering or
