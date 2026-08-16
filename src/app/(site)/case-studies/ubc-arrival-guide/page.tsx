@@ -410,9 +410,11 @@ export default function UBCArrivalGuidePage() {
             </div>
 
             <p className="mt-4 text-sm text-text-muted leading-relaxed">
-              Teammates led the need-finding study, the newsletter, the study
-              materials, and the analysis. We each ran two of the ten usability
-              sessions.
+              The rest doesn&rsquo;t split cleanly. We all interviewed, coded,
+              wrote, and reviewed each other&rsquo;s work - I ran interviews
+              in the need-finding study and two of the ten usability sessions,
+              like everyone else did. The newsletter and the visualizations were
+              the pieces I had the least hand in.
             </p>
           </section>
 
