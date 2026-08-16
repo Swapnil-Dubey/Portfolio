@@ -370,8 +370,8 @@ export default function AcademicOSPage() {
                     Deferred, not necessary for the core flow.
                   </li>
                   <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                    <strong>Career-goal course mapping:</strong> Every candidate
-                    data source failed the product&rsquo;s verifiability
+                    <strong>Career-goal course mapping:</strong>{" "}
+                    Every candidate data source failed the product&rsquo;s verifiability
                     standard. See Design Decision Log.
                   </li>
                 </ul>
@@ -457,8 +457,8 @@ export default function AcademicOSPage() {
                       relocates it
                     </li>
                     <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                      <strong>Real professor interviews</strong> -
-                      highest-quality option, but still opinion (professors lack
+                      <strong>Real professor interviews</strong>{" "}
+                      - highest-quality option, but still opinion (professors lack
                       labor-market outcome data), inconsistent with the case
                       study&rsquo;s existing research-integrity boundary
                     </li>
