@@ -21,12 +21,17 @@ export function Header() {
         className="mx-auto flex max-w-[1080px] items-center justify-between px-6 py-4"
         aria-label="Main navigation"
       >
-        <Link
-          href="/"
-          className="font-display text-lg tracking-tight text-text no-underline hover:no-underline"
-        >
-          Swapnil Dubey
-        </Link>
+        {/* The homepage leads with the name, so the wordmark is redundant there */}
+        {pathname === "/" ? (
+          <span aria-hidden="true" />
+        ) : (
+          <Link
+            href="/"
+            className="font-display text-lg tracking-tight text-text no-underline hover:no-underline"
+          >
+            Swapnil Dubey
+          </Link>
+        )}
 
         <div className="flex items-center gap-6">
           <ul className="hidden md:flex items-center gap-5 text-sm">
