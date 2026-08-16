@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import { FlashlightToggle } from "./flashlight-toggle";
 
 const navLinks = [
-  { href: "/#work", label: "Work" },
   { href: "/case-studies", label: "Case Studies" },
   { href: "/projects", label: "Projects" },
   { href: "/writing", label: "Writing" },
