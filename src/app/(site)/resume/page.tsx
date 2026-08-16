@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Resume",
@@ -38,12 +39,33 @@ export default function ResumePage() {
       <hr className="my-8 border-border" />
 
       {/* Work Experience */}
-      <section className="mb-12">
+      <section id="work" className="mb-12 scroll-mt-24">
         <h2 className="mb-6 text-text-muted text-xs font-mono uppercase tracking-widest">
           Work experience
         </h2>
 
         <div className="space-y-10">
+          {/* Electronic Arts */}
+          <article>
+            <div className="flex flex-col sm:flex-row sm:justify-between gap-1 mb-2">
+              <div>
+                <h3 className="text-base font-semibold">
+                  Technical Product Manager Intern
+                  <span className="ml-2 inline-block rounded-full bg-accent/15 px-2.5 py-0.5 text-xs font-medium text-accent align-middle">
+                    Incoming
+                  </span>
+                </h3>
+                <p className="text-sm text-text-muted italic">Electronic Arts - Production Infrastructure &amp; Engineering</p>
+              </div>
+              <time className="text-xs font-mono text-text-muted whitespace-nowrap">Sept – Dec 2026</time>
+            </div>
+            <ul className="space-y-2 text-sm leading-relaxed">
+              <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                Internal platforms, tools, and services used by EA studios and engineering teams
+              </li>
+            </ul>
+          </article>
+
           {/* BCI */}
           <article>
             <div className="flex flex-col sm:flex-row sm:justify-between gap-1 mb-2">
@@ -123,6 +145,50 @@ export default function ResumePage() {
 
       <hr className="my-8 border-border" />
 
+      {/* Case Studies */}
+      <section className="mb-12">
+        <h2 className="mb-6 text-text-muted text-xs font-mono uppercase tracking-widest">
+          Case studies
+        </h2>
+
+        <div className="space-y-4">
+          <Link
+            href="/case-studies/academic-os"
+            className="group block rounded-lg border border-border p-5 no-underline hover:border-accent/40 transition-colors"
+          >
+            <h3 className="text-base font-semibold mb-2 text-text group-hover:text-accent transition-colors">
+              Academic OS
+            </h3>
+            <p className="text-sm text-text-muted italic leading-relaxed mb-2">
+              &ldquo;Students don&rsquo;t lack sources - they lack a single
+              synthesized judgment they can trust.&rdquo;
+            </p>
+            <p className="text-xs font-mono text-text-muted">
+              Self-directed PM case study · 12 min read · July 2026
+            </p>
+          </Link>
+
+          <Link
+            href="/case-studies/ubc-arrival-guide"
+            className="group block rounded-lg border border-border p-5 no-underline hover:border-accent/40 transition-colors"
+          >
+            <h3 className="text-base font-semibold mb-2 text-text group-hover:text-accent transition-colors">
+              The UBC Arrival Guide
+            </h3>
+            <p className="text-sm text-text-muted italic leading-relaxed mb-2">
+              &ldquo;Arrival information isn&rsquo;t missing - it&rsquo;s
+              scattered, and asking publicly feels exposing.&rdquo;
+            </p>
+            <p className="text-xs font-mono text-text-muted">
+              CPSC 344 team project, shipped prototype &amp; usability study · 15
+              min read · May – Aug 2026
+            </p>
+          </Link>
+        </div>
+      </section>
+
+      <hr className="my-8 border-border" />
+
       {/* Technical Projects */}
       <section className="mb-12">
         <h2 className="mb-6 text-text-muted text-xs font-mono uppercase tracking-widest">
@@ -164,6 +230,22 @@ export default function ResumePage() {
 
           <article>
             <div className="flex flex-col sm:flex-row sm:justify-between gap-1 mb-2">
+              <h3 className="text-base font-semibold">Real-Time Financial Data Pipeline</h3>
+              <time className="text-xs font-mono text-text-muted whitespace-nowrap">Jan 2026</time>
+            </div>
+            <p className="text-xs text-text-muted font-mono mb-2">Python, SQL, PySpark, Airflow, dbt, BigQuery, Docker</p>
+            <ul className="space-y-2 text-sm leading-relaxed">
+              <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                Ingested 7,840+ daily OHLCV records across 5 tickers into BigQuery on a 5-stage pipeline scheduled via Airflow DAG with Docker CeleryExecutor
+              </li>
+              <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                Designed a 3-layer dbt data model (raw → staging → fact → aggregate) with 6 automated schema tests
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <div className="flex flex-col sm:flex-row sm:justify-between gap-1 mb-2">
               <h3 className="text-base font-semibold">Prescripto - AI Healthcare Transcription</h3>
               <time className="text-xs font-mono text-text-muted whitespace-nowrap">Mar 2025</time>
             </div>
@@ -177,6 +259,12 @@ export default function ResumePage() {
               </li>
             </ul>
           </article>
+        </div>
+
+        <div className="mt-8">
+          <Link href="/projects" className="text-sm">
+            View all projects &rarr;
+          </Link>
         </div>
       </section>
 
