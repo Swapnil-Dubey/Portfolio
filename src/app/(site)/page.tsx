@@ -7,9 +7,8 @@ export default function Home() {
           Swapnil Dubey
         </h1>
         <p className="text-text-muted text-sm font-mono leading-relaxed">
-          Computer Science + Statistics @ UBC&ensp;·&ensp;Incoming Technical
-          Product Manager Intern @ Electronic Arts&ensp;·&ensp;Graduating May
-          2027
+          Computer Science + Statistics @ UBC&ensp;·&ensp;Technical Product
+          Manager Intern @ Electronic Arts&ensp;·&ensp;Graduating May 2027
         </p>
 
         <p className="mt-6 text-sm font-semibold text-accent">
