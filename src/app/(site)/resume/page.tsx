@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Resume",
-  description: "Swapnil Dubey - resume. Computer Science + Statistics @ UBC, incoming TPM Intern @ Electronic Arts.",
+  description: "Swapnil Dubey - resume. Computer Science + Statistics @ UBC, TPM Intern @ Electronic Arts.",
 };
 
 export default function ResumePage() {
@@ -52,7 +52,7 @@ export default function ResumePage() {
                 <h3 className="text-base font-semibold">
                   Technical Product Manager Intern
                   <span className="ml-2 inline-block rounded-full bg-accent/15 px-2.5 py-0.5 text-xs font-medium text-accent align-middle">
-                    Incoming
+                    Current
                   </span>
                 </h3>
                 <p className="text-sm text-text-muted italic">Electronic Arts - Production Infrastructure &amp; Engineering</p>
@@ -61,7 +61,10 @@ export default function ResumePage() {
             </div>
             <ul className="space-y-2 text-sm leading-relaxed">
               <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
-                Internal platforms, tools, and services used by EA studios and engineering teams
+                Product discovery across internal platforms and developer tooling used by EA studios and engineering teams - interviewing internal engineering customers, framing problems, and analyzing technical and business tradeoffs
+              </li>
+              <li className="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-text-muted">
+                Evaluating where AI-assisted workflows improve internal developer and operational experience
               </li>
             </ul>
           </article>

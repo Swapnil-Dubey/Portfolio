@@ -14,12 +14,12 @@ contact - how to reach me
 clear - clear terminal`,
   about: `Hey, I'm Swapnil Dubey.
 4th-year CS & Statistics student @ UBC (Dean's Honour List, GPA 3.7/4.0).
-Incoming Technical Product Manager Intern @ Electronic Arts (Sept–Dec 2026).
+Technical Product Manager Intern @ Electronic Arts (Sept–Dec 2026).
 Software Engineer Co-op @ BCI (Jan–Apr 2026).
 Cyber Risk Analyst Co-op @ Teck Resources (Sep–Dec 2025).
 Business Analyst Co-op @ Teck Resources (May–Aug 2025).
 I build ML/data engineering pipelines, GenAI tools, and internal automation.`,
-  experience: `[1] Electronic Arts - Technical Product Manager Intern (Sept–Dec 2026) [INCOMING]
+  experience: `[1] Electronic Arts - Technical Product Manager Intern (Sept–Dec 2026)
 • Production Infrastructure & Engineering - internal platforms, tools, and services.
 
 [2] British Columbia Investment Management Corporation (BCI) - Software Engineer Co-op (Jan–Apr 2026)
